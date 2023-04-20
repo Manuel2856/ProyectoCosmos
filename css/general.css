@@ -20,6 +20,7 @@ main{
                           "atmosfera curiosidades";
     gap: 1rem;
 }
+
 .etimologia{
     grid-area: etimologia;
 }
@@ -39,9 +40,11 @@ h1{
 h2{
     color: #F5F5F5;
     font-family: Slate pro;
+    text-align: center;
 }
 p{
     color: white;
+    text-align: left;
 }
 .etimologia,.atmosfera{
     background-color: #8f8cc1;
@@ -50,12 +53,20 @@ p{
     background-color: #a982c8;
 }
 article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem 0 0.5rem;
 }
+
 @media (max-width: 480px) {
-    
+    .tierra-imagen{
+        max-width: 15rem;
+    }
   }
-  
+
+  @media (min-width: 481px) {
+    .tierra-imagen{
+        max-width: 20rem;
+    }
+  } 
+  @media (min-width:769px) {
+    
+  } */
