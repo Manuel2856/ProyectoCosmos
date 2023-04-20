@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Slate pro";
+    src: url(../fonts/SlatePro-Black.ttf);
+}
+
+body{
+    background-image: url(../images/fondo-universo.webp);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-areas:  "etimologia etimologia"
+                          "temperatura curiosidades"
+                          "atmosfera curiosidades";
+    gap: 1rem;
+}
+.etimologia{
+    grid-area: etimologia;
+}
+.temperatura{
+    grid-area: temperatura;
+}
+.atmosfera{
+    grid-area: atmosfera;
+}
+.curiosidades{
+    grid-area: curiosidades;
+}
+h1{
+    color: #E6E6FA;
+    
+}
+h2{
+    color: #F5F5F5;
+    font-family: Slate pro;
+}
+p{
+    color: white;
+}
+.etimologia,.atmosfera{
+    background-color: #8f8cc1;
+}
+.curiosidades,.temperatura{
+    background-color: #a982c8;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 480px) {
+    
+  }
+  
