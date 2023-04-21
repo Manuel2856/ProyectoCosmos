@@ -46,6 +46,9 @@ p{
     color: white;
     text-align: left;
 }
+.etimologia p{
+    text-align: center;
+}
 .etimologia,.atmosfera{
     background-color: #8f8cc1;
 }
