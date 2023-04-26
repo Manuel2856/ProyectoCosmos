@@ -1,72 +1,73 @@
 @font-face {
-    font-family: "Slate pro";
-    src: url(../fonts/SlatePro-Black.ttf);
+  font-family: "Slate pro";
+  src: url(../fonts/SlatePro-Black.ttf);
 }
 
-body{
-    background-image: url(../images/fondo-universo.webp);
+body {
+  background-image: url(../images/fondo-universo.webp);
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-main{
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
-    grid-template-areas:  "etimologia etimologia"
-                          "temperatura curiosidades"
-                          "atmosfera curiosidades";
-    gap: 1rem;
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "etimologia etimologia"
+    "temperatura curiosidades"
+    "atmosfera curiosidades";
+  gap: 1rem;
 }
 
-.etimologia{
-    grid-area: etimologia;
+.etimologia {
+  grid-area: etimologia;
 }
-.temperatura{
-    grid-area: temperatura;
+.temperatura {
+  grid-area: temperatura;
 }
-.atmosfera{
-    grid-area: atmosfera;
+.atmosfera {
+  grid-area: atmosfera;
 }
-.curiosidades{
-    grid-area: curiosidades;
+.curiosidades {
+  grid-area: curiosidades;
 }
-h1{
-    color: #E6E6FA;
-    
+h1 {
+  color: #e6e6fa;
 }
-h2{
-    color: #F5F5F5;
-    font-family: Slate pro;
-    text-align: center;
+h2 {
+  color: #f5f5f5;
+  font-family: Slate pro;
+  text-align: center;
 }
-p{
-    color: white;
-    text-align: left;
+p {
+  color: white;
+  text-align: left;
 }
-.etimologia,.atmosfera{
-    background-color: #8f8cc1;
+.etimologia,
+.atmosfera {
+  background-color: #8f8cc1;
 }
-.curiosidades,.temperatura{
-    background-color: #a982c8;
+.curiosidades,
+.temperatura {
+  background-color: #a982c8;
 }
-article{
-    padding: 0 1rem 0 0.5rem;
+article {
+  padding: 0 1rem 0 0.5rem;
 }
 
 @media (max-width: 480px) {
-    .imagen-planeta{
-        max-width: 15rem;
-    }
+  .imagen-planeta {
+    max-width: 15rem;
   }
+}
 
-  @media (min-width: 481px) {
-    .imagen-planeta{
-        max-width: 20rem;
-    }
-  } 
-  @media (min-width:769px) {
-    
-  } 
+@media (min-width: 481px) {
+  .imagen-planeta {
+    max-width: 20rem;
+  }
+}
+@media (min-width: 769px) {
+}
