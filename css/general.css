@@ -1,98 +1,104 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
-    font-family: "Slate pro";
-    src: url(../fonts/SlatePro-Black.ttf);
+  font-family: "Slate pro";
+  src: url(../fonts/SlatePro-Black.ttf);
 }
 
-body{
-    background-image: url(../images/fondo-universo.webp);
+body {
+  background-image: url(../images/fondo-universo.webp);
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#planeta{
-    background: url(../images/mapa-tierra.webp);
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background-size: cover;
-    box-shadow: inset 0 0 20px #000, inset -40px -10px 20px rgba(3,32,56,0.7);
-    animation: planeta 9s linear infinite forwards;
+.imagen-planeta {
+  margin-top: 10vw;
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  background-image: url(../images/Tierra.png);
+  box-shadow: inset 0 0 20px #dde6fd, inset -50px -10px 20px rgba(3, 32, 56, 0.7);
+  background-size: cover;
+  background-position: center;
+  animation: rotacion 30s linear infinite;
 }
-@keyframes planeta{
-    0%{
-        background-position-x:0 ;
-    }
-    100%{
-        background-position-x: -2266px;
-    }
+@keyframes rotacion {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1322px;
+  }
 }
-main{
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
-    grid-template-areas:  "etimologia etimologia"
-                          "temperatura curiosidades"
-                          "atmosfera curiosidades";
-    gap: 1rem;
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "etimologia etimologia"
+    "temperatura curiosidades"
+    "atmosfera curiosidades";
+  gap: 1rem;
 }
 
-.etimologia{
-    grid-area: etimologia;
+.etimologia {
+  grid-area: etimologia;
 }
-.temperatura{
-    grid-area: temperatura;
+.temperatura {
+  grid-area: temperatura;
 }
-.atmosfera{
-    grid-area: atmosfera;
+.atmosfera {
+  grid-area: atmosfera;
 }
-.curiosidades{
-    grid-area: curiosidades;
+.curiosidades {
+  grid-area: curiosidades;
 }
-h1{
-    color: #E6E6FA;
-    
+h1 {
+  font-size: 5rem;
+  width: 80vw;
+  border-bottom: 5px solid white;
+  text-align: center;
+  color: #ff7a31;
+  letter-spacing: 15px;
+  text-shadow: -2px -2px 0px #8f8cc1, 2px -2px 0px #8f8cc1, -2px 2px 0px #8f8cc1;
+
 }
-h2{
-    color: #F5F5F5;
-    font-family: Slate pro;
-    text-align: center;
+h2 {
+  color: #f5f5f5;
+  font-family: Slate pro;
+  text-align: center;
 }
-p{
-    color: white;
-    text-align: left;
+p {
+  color: white;
+  text-align: left;
 }
-.etimologia p{
-    text-align: center;
+.etimologia,
+.atmosfera {
+  background-color: #8f8cc1;
+  border-radius: 45px 5px;
+  border: 5px solid #ffffff;
 }
-.etimologia,.atmosfera{
-    background-color: #8f8cc1;
+.curiosidades,
+.temperatura {
+  background-color: #ff7a31;
+  border-radius: 45px 5px;
+  border: 5px solid #ffffff;
 }
-.curiosidades,.temperatura{
-    background-color: #a982c8;
-}
-article{
-    padding: 0 1rem 0 0.5rem;
+article {
+  padding: 0 1rem 0 0.5rem;
 }
 
 @media (max-width: 480px) {
-    .imagen-planeta{
-        max-width: 15rem;
-    }
+  .imagen-planeta {
+    max-width: 20em;
+    max-height: 20em;
   }
+}
 
-  @media (min-width: 481px) {
-    .imagen-planeta{
-        max-width: 20rem;
-    }
-  } 
-  @media (min-width:769px) {
-    
-  } 
+@media (min-width: 481px) {
+  .imagen-planeta {
+   
+  }
+}
+@media (min-width: 769px) {
+}
