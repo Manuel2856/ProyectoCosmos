@@ -72,6 +72,9 @@ p {
   color: white;
   text-align: left;
 }
+ul li{
+  color: white;
+}
 .etimologia,
 .atmosfera {
   background-color: #8f8cc1;
