@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Slate pro";
   src: url(../fonts/SlatePro-Black.ttf);
@@ -6,7 +12,10 @@
 body {
   background-image: url(../images/fondo-universo.webp);
 }
-
+.barra-de-navegacion{
+  height: 5rem;
+  border: solid 0.1rem;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -90,7 +99,9 @@ ul li{
 article {
   padding: 0 1rem 0 0.5rem;
 }
-
+a{
+  text-decoration: none;
+}
 @media (max-width: 480px) {
   .imagen-planeta {
     max-width: 20em;
