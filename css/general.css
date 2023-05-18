@@ -14,11 +14,11 @@ body {
 }
 .barra-de-navegacion{
   height: 5rem;
-  background-color: black;
   display: flex;
   align-items: center;
-  
+  justify-content: center;
 }
+
 .barra-de-navegacion ul{
   display: flex;
   list-style: none;
@@ -27,13 +27,82 @@ body {
 .barra-de-navegacion li{
   margin-right: 2rem;
 }
+
+@keyframes colorChange {
+  0% { color: black; } /* Color inicial */
+  10% { color: #FFD700; } /* Color para SOL */
+  20% { color: #BEBEBE; } /* Color para MERCURIO */
+  30% { color: #FF7F50; } /* Color para VENUS */
+  40% { color: #008000; } /* Color para TIERRA */
+  50% { color: #FF4500; } /* Color para MARTE */
+  60% { color: #B8860B; } /* Color para JÚPITER */
+  70% { color: #CD853F; } /* Color para SATURNO */
+  80% { color: #00CED1; } /* Color para URANO */
+  90% { color: #0000CD; } /* Color para NEPTUNO */
+  100% { color: black; } /* Color final igual al inicial */
+}
+
+.txtN-inicio {
+  animation: colorChange 15s infinite; /* Aplica la animación a la clase .txtN-INICIO */
+}
+
+
+.txtN-sol {
+  color: #FFD700; /* Color para SOL (Amarillo Dorado) */
+}
+
+.txtN-mercurio {
+  color: #BEBEBE; /* Color para MERCURIO (Gris) */
+}
+
+.txtN-venus {
+  color: #FF7F50; /* Color para VENUS (Naranja claro) */
+}
+
+.txtN-TIERRA {
+  color: #008000; /* Color para TIERRA (Verde) */
+}
+
+.txtN-marte {
+  color: #FF4500; /* Color para MARTE (Naranja oscuro) */
+}
+
+.txtN-jupiter {
+  color: #B8860B; /* Color para JÚPITER (Dorado) */
+}
+
+.txtN-saturno {
+  color: #CD853F; /* Color para SATURNO (Marrón claro) */
+}
+
+.txtN-urano {
+  color: #00CED1; /* Color para URANO (Cian) */
+}
+
+.txtN-neptuno {
+  color: #0000CD; /* Color para NEPTUNO (Azul medio) */
+}
+.txtN-inicio,
+.txtN-sol,
+.txtN-mercurio,
+.txtN-venus,
+.txtN-TIERRA,
+.txtN-marte,
+.txtN-jupiter,
+.txtN-saturno,
+.txtN-urano,
+.txtN-neptuno {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Agrega un bordeado negro a las palabras */
+  font-size: 1.5rem;
+}
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .imagen-planeta {
-  margin-top: 7vw;
+  margin-top: 1vw;
   width: 30em;
   height: 30em;
   border-radius: 50%;
@@ -110,8 +179,9 @@ ul li{
 article {
   padding: 0 1rem 0 0.5rem;
 }
-a{
-  text-decoration: none;
+a:-webkit-any-link {
+  color: inherit; /* Establece el color del enlace como heredado */
+  text-decoration: none; /* Elimina la decoración de texto del enlace */
 }
 @media (max-width: 480px) {
   .imagen-planeta {
