@@ -5,6 +5,14 @@
 
 body {
   background-image: url(../images/fondo-universo.webp);
+
+}
+.barra-de-navegacion{
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
 }
 
 header {
@@ -38,6 +46,8 @@ main {
     "temperatura curiosidades"
     "atmosfera curiosidades";
   gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .etimologia {
@@ -60,6 +70,8 @@ h1 {
   color: #ff7a31;
   letter-spacing: 15px;
   text-shadow: -2px -2px 0px #8f8cc1, 2px -2px 0px #8f8cc1, -2px 2px 0px #8f8cc1;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 
 }
 h2 {
@@ -86,17 +98,73 @@ p {
 article {
   padding: 0 1rem 0 0.5rem;
 }
-
-@media (max-width: 480px) {
-  .imagen-planeta {
-    max-width: 15rem;
-  }
+a:-webkit-any-link {
+  color: inherit; /* Establece el color del enlace como heredado */
+  text-decoration: none; /* Elimina la decoración de texto del enlace */
+}
+H3{
+  text-align: center;
+  color: white;
+}
+footer{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+footer p{
+  padding: 0.5rem 0 0.5rem;
 }
 
-@media (min-width: 481px) {
+.dropdown{
+  display: inline;
+}
+.dropdown-content {
+  display: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.boton-planetas{
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+  display: inline;
+  border:0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media screen and (max-width: 1024px) {
   .imagen-planeta {
     max-width: 20rem;
+    max-height: 20rem;
   }
 }
-@media (min-width: 769px) {
+
+@media screen and (max-width: 768px) {
+  .imagen-planeta {
+    max-width: 15rem;
+    max-height: 15rem;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .imagen-planeta {
+    max-width: 10rem;
+    max-height: 10rem;
+  }
+  .txtN-sol,
+  .txtN-mercurio,
+  .txtN-venus,
+  .txtN-tierra,
+  .txtN-marte,
+  .txtN-jupiter,
+  .txtN-saturno,
+  .txtN-urano,
+  .txtN-neptuno {
+    display: none;
+  }
 }
