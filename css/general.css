@@ -191,6 +191,16 @@ a:-webkit-any-link {
   color: inherit; /* Establece el color del enlace como heredado */
   text-decoration: none; /* Elimina la decoración de texto del enlace */
 }
+H3{
+  text-align: center;
+  color: white;
+}
+footer{
+  margin-top: 2rem;
+}
+footer p{
+  padding: 0.5rem 0 0.5rem 1rem;
+}
 @media (max-width: 480px) {
   .imagen-planeta {
     max-width: 20em;
