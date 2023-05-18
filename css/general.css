@@ -6,6 +6,7 @@
 
 @font-face {
   font-family: "Slate pro";
+  font-display: swap;
   src: url(../fonts/SlatePro-Black.ttf);
 }
 
