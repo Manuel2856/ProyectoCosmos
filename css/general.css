@@ -15,6 +15,89 @@ body {
   max-width: 100%;
 }
 
+.barra-de-navegacion ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.barra-de-navegacion li{
+  margin-right: 2rem;
+}
+
+@keyframes colorChange {
+  0% { color: black; } /* Color inicial */
+  10% { color: #FFD700; } /* Color para SOL */
+  20% { color: #BEBEBE; } /* Color para MERCURIO */
+  30% { color: #FF7F50; } /* Color para VENUS */
+  40% { color: #008000; } /* Color para TIERRA */
+  50% { color: #FF4500; } /* Color para MARTE */
+  60% { color: #B8860B; } /* Color para JÚPITER */
+  70% { color: #CD853F; } /* Color para SATURNO */
+  80% { color: #00CED1; } /* Color para URANO */
+  90% { color: #0000CD; } /* Color para NEPTUNO */
+  100% { color: black; } /* Color final igual al inicial */
+}
+
+.txtN-inicio {
+  animation: colorChange 15s infinite; /* Aplica la animación a la clase .txtN-INICIO */
+  margin-right: 10rem;
+}
+
+
+.txtN-sol {
+  color: #FFD700; /* Color para SOL (Amarillo Dorado) */
+}
+
+.txtN-mercurio {
+  color: #BEBEBE; /* Color para MERCURIO (Gris) */
+}
+
+.txtN-venus {
+  color: #FF7F50; /* Color para VENUS (Naranja claro) */
+}
+
+.txtN-tierra {
+  color: #008000; /* Color para TIERRA (Verde) */
+}
+
+.txtN-marte {
+  color: #FF4500; /* Color para MARTE (Naranja oscuro) */
+}
+
+.txtN-jupiter {
+  color: #B8860B; /* Color para JÚPITER (Dorado) */
+}
+
+.txtN-saturno {
+  color: #CD853F; /* Color para SATURNO (Marrón claro) */
+}
+
+.txtN-urano {
+  color: #00CED1; /* Color para URANO (Cian) */
+}
+
+.txtN-neptuno {
+  color: #0000CD; /* Color para NEPTUNO (Azul medio) */
+}
+.txtN-inicio,
+.txtN-sol,
+.txtN-mercurio,
+.txtN-venus,
+.txtN-tierra,
+.txtN-marte,
+.txtN-jupiter,
+.txtN-saturno,
+.txtN-urano,
+.txtN-neptuno,
+.txtB-planetas,
+.txt-contactanos {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Agrega un bordeado negro a las palabras */
+  font-size: 1.5rem;
+}
+.txt-contactanos{
+  margin-right: 10rem;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -105,14 +188,17 @@ a:-webkit-any-link {
 H3{
   text-align: center;
   color: white;
+  padding: 1rem;
 }
 footer{
-  margin-left: 1rem;
-  margin-right: 1rem;
+
   margin-top: 2rem;
+  background-color: black;
 }
 footer p{
   padding: 0.5rem 0 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .dropdown{
