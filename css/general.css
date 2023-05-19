@@ -9,10 +9,13 @@
   src: url(../fonts/SlatePro-Black.ttf);
 }
 body {
+  position: relative;
+  z-index: 99;
   background-color: #000;
 }
-/*BARRA DE NAVEGACIÓN*/
+
 nav {
+  height: 4rem;
   display: flex;
   
   background-color: #34495e;
@@ -22,19 +25,33 @@ nav ul, nav ul >li{
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  background-image: url(../images/fondo-universo.webp);
-  border-bottom: 1px solid white;
-  /* Agrega la ruta de la imagen que deseas utilizar */
-  animation: movimientoImagen 30s linear infinite;
-  /* Aplica la animación a la imagen de fondo */
+  background-color: #34495e;
+  justify-content: space-around;
+  border: 2px solid rgba(255, 255, 255, 0.514);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-nav ul > li {
-    height: 4rem;
+
+.txtN-inicio {
+  animation: colorChange 15s infinite;
 }
-/* Estilos del menú desplegable */
-.dropdown{
+
+@keyframes movimientoImagen {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+a button {
+  text-decoration: none;
+  enable-background: 0%;
+  color: white;
+}
+
+nav ul {
   display: flex;
   align-items: center;
   height: 4rem;
@@ -48,14 +65,17 @@ nav ul > li {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  padding: 0;
-  margin: 0;
+  list-style: none;
 }
-.dropdown-content ul li {
-  padding: 8px 12px;
-}
-li a{
-  font-size:2rem;
+
+@keyframes rotacion {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1322px;
+  }
 }
 
 main {
@@ -66,8 +86,9 @@ main {
     "temperatura curiosidades"
     "atmosfera curiosidades";
   gap: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding: 5rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 .txtN-inicio {
   animation: colorChange 15s infinite;
@@ -175,36 +196,14 @@ main {
   /* Color para NEPTUNO (Azul medio) */
 }
 
-.txtN-inicio,
-.txtN-sol,
-.txtN-mercurio,
-.txtN-venus,
-.txtN-tierra,
-.txtN-marte,
-.txtN-jupiter,
-.txtN-saturno,
-.txtN-urano,
-.txtN-neptuno,
-.txtB-planetas,
-.txt-contactanos,.txtB-planetas {
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-    1px 1px 0 black;
-  /* Agrega un bordeado negro a las palabras */
-  font-size: 1.5rem;
-}
-
-.txt-contactanos,.txtN-inicio, 
+nav > a,
 button {
-  background: none;
-  border: none; 
-  text-decoration: none;
-  font-size: 2rem;
-  font-style: oblique;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: white;
+  width: 33%;
+  font-size: 3rem;
 }
 
-.txt-contactanos,.txtB-planetas:hover {
+.txt-contactanos:hover,
+.txtB-planetas:hover {
   border-bottom: 1px solid white;
   /* Agrega un borde inferior de 1px sólido blanco al hacer hover */
 }
@@ -227,6 +226,7 @@ header {
   padding: 0.25em 0 0.325em;
 }
 .imagen-planeta {
+  margin-top: 1vw;
   width: 25em;
   height: 25em;
   border-radius: 50%;
@@ -264,30 +264,11 @@ header {
   grid-area: curiosidades;
 }
 
-h1 {
-  font-size: 7em;
-  width: 80vw;
-  border-bottom: 5px solid white;
-  text-align: center;
-  color: #ff7a31;
-  letter-spacing: 15px;
-  text-shadow: -2px -2px 0px #8f8cc1, 2px -2px 0px #8f8cc1, -2px 2px 0px #8f8cc1;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
 h2 {
   color: #f5f5f5;
   font-family: "Slate pro";
   text-align: center;
 }
-
-p {
-  color: white;
-  text-align: left;
-}
-
-
 
 .etimologia,
 .atmosfera {
@@ -302,28 +283,38 @@ p {
   border-radius: 45px 5px;
   border: 5px solid #ffffff;
 }
+h1 {
+  width: 80%;
+  margin: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  font: 1em "Oswald", sans-serif;
+  color: rgba(255, 255, 255, 0.521);
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+}
+span {
+  font: 8em "Oswald", sans-serif;
+  background-image: url(../images/fondoTituloPLaneta.png);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  animation: rotacion 30s linear infinite;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+}
+
 .etimologia,
 .atmosfera,
 .curiosidades,
 .temperatura {
   padding: 0.5rem 1rem 1rem 1rem;
-}
-
-
-h1 {
-  font: 8em "Oswald", sans-serif;
-  background-image: url(../images/fondoTituloPLaneta.png);
-  -webkit-background-clip: text;
-  background-clip: text;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  -webkit-text-fill-color: transparent;
-  animation: rotacion 30s linear infinite;
-}
-h2 {
-  color: #f5f5f5;
-  font-family: "Slate pro";
-  text-align: center;
 }
 
 h3 {
@@ -335,7 +326,7 @@ h3 {
 
 footer {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   margin-bottom: 2rem;
 
   border: PowderBlue 5px double;
@@ -345,8 +336,8 @@ footer {
 
 footer p {
   padding: 0.5rem 0 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 2rem;
+  color: white;
 }
 
 /* Estilos del menú desplegable */
@@ -358,7 +349,7 @@ footer p {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #090834;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -378,10 +369,10 @@ footer p {
   display: block;
 }
 
-.boton-planetas {
-  background-color: transparent;
-  color: white;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
+
 @media screen and (max-width: 1024px) {
   .imagen-planeta {
     
@@ -437,6 +428,12 @@ footer p {
   100% {
     background-position-x: 100%;
   }
+}
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
 }
 
 
