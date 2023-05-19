@@ -22,7 +22,7 @@ body {
   justify-content: center;
   max-width: 100%;
   background-image: url(../images/fondo-universo.webp);
-  border-bottom:  1px solid white;
+  border-bottom: 1px solid white;
   /* Agrega la ruta de la imagen que deseas utilizar */
   animation: movimientoImagen 30s linear infinite;
   /* Aplica la animación a la imagen de fondo */
@@ -66,6 +66,8 @@ main {
     "temperatura curiosidades"
     "atmosfera curiosidades";
   gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 @keyframes colorChange {
@@ -188,7 +190,7 @@ main {
 .txtN-urano,
 .txtN-neptuno,
 .txtB-planetas,
-.txt-contactanos {
+.txt-contactanos,.txtB-planetas {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
   /* Agrega un bordeado negro a las palabras */
@@ -197,6 +199,11 @@ main {
 
 .txt-contactanos {
   margin-right: 10rem;
+}
+
+.txt-contactanos,.txtB-planetas:hover {
+  border-bottom: 1px solid white;
+  /* Agrega un borde inferior de 1px sólido blanco al hacer hover */
 }
 
 header {
@@ -226,18 +233,6 @@ header {
   100% {
     background-position-x: -1322px;
   }
-}
-
-main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "etimologia etimologia"
-    "temperatura curiosidades"
-    "atmosfera curiosidades";
-  gap: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .etimologia {
@@ -270,7 +265,7 @@ h1 {
 
 h2 {
   color: #f5f5f5;
-  font-family: Slate pro;
+  font-family: "Slate pro";
   text-align: center;
 }
 
@@ -279,9 +274,7 @@ p {
   text-align: left;
 }
 
-ul li {
-  color: white;
-}
+
 
 .etimologia,
 .atmosfera {
@@ -315,7 +308,7 @@ a:-webkit-any-link {
   /* Elimina la decoración de texto del enlace */
 }
 
-H3 {
+h3 {
   text-align: center;
   color: white;
   padding: 1rem;
@@ -341,7 +334,7 @@ footer p {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -360,8 +353,6 @@ footer p {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
 
 .boton-planetas {
   background-color: transparent;
