@@ -10,7 +10,9 @@
   /*Si la fuente no se encuentra disponible, el navegador utiliza otra por defecto*/
   src: url(../fonts/SlatePro-Black.ttf);
 }
-
+nav >p{
+  border: 1px solid white;
+}
 body {
   position: relative;
   z-index: 99;
@@ -181,15 +183,16 @@ main {
 
 nav > a,
 button {
+  background: none;
+  border: none;
   width: 33%;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-style: oblique;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
 }
 
-.txt-contactanos:hover,
-.txtB-planetas:hover {
-  border-bottom: 1px solid white;
-  /* Agrega un borde inferior de 1px sólido blanco al hacer hover */
-}
+
 
 header {
   display: flex;
@@ -335,6 +338,9 @@ footer p {
 
 .dropdown-content ul li {
   padding: 8px 12px;
+}
+li a{
+  font-size:2rem;
 }
 
 .dropdown:hover .dropdown-content {
