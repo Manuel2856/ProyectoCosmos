@@ -40,6 +40,11 @@ nav ul >li{
     background-position-x: 100%;
   }
 }
+a button {
+  text-decoration: none;
+  enable-background: 0%;
+  color: white;
+}
 @keyframes rotacion {
   0% {
     background-position-x: 0;
