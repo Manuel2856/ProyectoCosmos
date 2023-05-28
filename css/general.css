@@ -45,11 +45,12 @@ nav ul >li{
     background-position-x: 100%;
   }
 }
+/*
 a button {
   text-decoration: none;
   enable-background: 0%;
   color: white;
-}
+} */
 
 
 
@@ -179,14 +180,14 @@ main {
   /* Color para NEPTUNO (Azul medio) */
 }
 
-nav > a,
-button {
+.txtN-inicio,.txt-contactanos, .dropdown >p >button{
   background: none;
   border: none; 
   font-size: 2rem;
   font-style: oblique;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: white;
+  text-decoration: none;
 }
 
 header {
