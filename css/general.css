@@ -24,8 +24,43 @@ body {
   list-style: none;
   justify-content: space-around;
 }
-.barra-de-navegacion li{
-  margin-right: 2rem;
+nav ul >li{
+  display: flex;
+  list-style: none;
+}
+.txtN-inicio {
+  animation: colorChange 15s infinite;
+}
+
+@keyframes movimientoImagen {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+@keyframes rotacion {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1322px;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "etimologia etimologia"
+    "temperatura curiosidades"
+    "atmosfera curiosidades";
+  gap: 1rem;
+  padding: 5rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 @keyframes colorChange {
   0% {
@@ -120,14 +155,14 @@ body {
   color: #0000CD; /* Color para NEPTUNO (Azul medio) */
 }
 
-nav > a,
-button {
+.txtN-inicio,.txt-contactanos, .dropdown >p >button{
   background: none;
   border: none; 
   font-size: 2rem;
   font-style: oblique;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: white;
+  text-decoration: none;
 }
 
 header {
