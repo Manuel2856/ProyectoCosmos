@@ -3,20 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: "Slate pro";
-  font-display: swap;
-  /*Si la fuente no se encuentra disponible, el navegador utiliza otra por defecto*/
+  font-display: swap; /*Si la fuente no se encuentra disponible, el navegador utiliza otra por defecto*/
   src: url(../fonts/SlatePro-Black.ttf);
-}
-nav >p{
-  border: 1px solid white;
 }
 body {
   background-color: #000;
 }
-
+/*BARRA DE NAVEGACIÓN*/
 nav {
   height: 4rem;
   display: flex;
@@ -24,58 +19,42 @@ nav {
   background-color: #34495e;
   border: 2px solid rgba(255, 255, 255, 0.514);
 }
-nav ul{
+nav ul, nav ul >li{
   display: flex;
   width: 100%;
   justify-content: space-around;
-}
-nav ul >li{
-  display: flex;
   list-style: none;
+}
+/* Estilos del menú desplegable */
+.dropdown-content{
+  display: none;
+  background-color: #090834;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content ul li {
+  padding: 8px 12px;
+}
+li a{
+  font-size:2rem;
+}
+.dropdown:hover + .dropdown-content {
+  display: flex;
+  position: absolute;
+  margin-top: 3.22rem;
 }
 .txtN-inicio {
   animation: colorChange 15s infinite;
 }
-
-@keyframes movimientoImagen {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 100%;
-  }
-}
-a button {
-  text-decoration: none;
-  enable-background: 0%;
-  color: white;
-}
-
-
-
-@keyframes rotacion {
-  0% {
-    background-position-x: 0;
-  }
-
-  100% {
-    background-position-x: -1322px;
-  }
-}
-
-main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "etimologia etimologia"
-    "temperatura curiosidades"
-    "atmosfera curiosidades";
-  gap: 1rem;
-  padding: 5rem;
-  margin-left: 0;
-  margin-right: 0;
-}
-
 @keyframes colorChange {
   0% {
     color: black;
@@ -193,15 +172,25 @@ button {
   color: white;
 }
 
+/*COSMOS, PLANETA EN MOVIMIENTO*/
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
 }
-
+.informacion-cosmos {
+  width: 90%;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  font: 1em "Oswald", sans-serif;
+  color: rgba(255, 255, 255, 0.521);
+  padding: 0.25em 0 0.325em;
+}
 .imagen-planeta {
-  margin-top: 1vw;
   width: 25em;
   height: 25em;
   border-radius: 50%;
@@ -223,6 +212,20 @@ header {
   }
 }
 
+/*CUERPO DE LA PÁGINA*/
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "etimologia etimologia"
+    "temperatura curiosidades"
+    "atmosfera curiosidades";
+  gap: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .etimologia {
   grid-area: etimologia;
 }
@@ -238,13 +241,6 @@ header {
 .curiosidades {
   grid-area: curiosidades;
 }
-
-h2 {
-  color: #f5f5f5;
-  font-family: "Slate pro";
-  text-align: center;
-}
-
 .etimologia,
 .atmosfera {
   background-color: #8f8cc1;
@@ -258,33 +254,6 @@ h2 {
   border-radius: 45px 5px;
   border: 5px solid #ffffff;
 }
-h1 {
-  width: 80%;
-  margin: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  text-align: center;
-  display: inline-block;
-  border: 4px double rgba(255, 255, 255, 0.25);
-  border-width: 4px 0;
-  padding: 1.5em 0em;
-  font: 1em "Oswald", sans-serif;
-  color: rgba(255, 255, 255, 0.521);
-  letter-spacing: 0;
-  padding: 0.25em 0 0.325em;
-  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-}
-span {
-  font: 8em "Oswald", sans-serif;
-  background-image: url(../images/fondoTituloPLaneta.png);
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  -webkit-text-fill-color: transparent;
-  animation: rotacion 30s linear infinite;
-  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-}
-
 .etimologia,
 .atmosfera,
 .curiosidades,
@@ -292,15 +261,33 @@ span {
   padding: 0.5rem 1rem 1rem 1rem;
 }
 
+
+h1 {
+  font: 8em "Oswald", sans-serif;
+  background-image: url(../images/fondoTituloPLaneta.png);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -webkit-text-fill-color: transparent;
+  animation: rotacion 30s linear infinite;
+}
+h2 {
+  color: #f5f5f5;
+  font-family: "Slate pro";
+  text-align: center;
+}
+
 h3 {
   text-align: center;
   color: white;
   padding: 1rem;
 }
+/*FOOTER*/
 
 footer {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   margin-bottom: 2rem;
 
   border: PowderBlue 5px double;
@@ -313,45 +300,13 @@ footer p {
   margin: 2rem;
   color: white;
 }
-
-/* Estilos del menú desplegable */
-
-
-.dropdown-content{
-  display: none;
-  background-color: #090834;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-content ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-
-.dropdown-content ul li {
-  padding: 8px 12px;
-}
-li a{
-  font-size:2rem;
-}
-
-.dropdown:hover + .dropdown-content {
-  display: flex;
-  position: absolute;
-  margin-right:60%;
-  margin-top: 3.22rem;
-}
-
-
 @media screen and (max-width: 1024px) {
   .imagen-planeta {
+    
     max-width: 20rem;
     max-height: 20rem;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -359,13 +314,30 @@ li a{
     max-width: 15rem;
     max-height: 15rem;
   }
+  h1{
+    font-size: 6rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .imagen-planeta {
-    max-width: 10rem;
-    max-height: 10rem;
+
+  header{
+    margin-top: 5rem;
   }
+  .txtN-inicio,.txt-contactanos,button{
+    font-size: 1.5rem;
+  }
+  h1{
+    font-size: 5rem;
+  }
+  main{
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-areas: "etimologia"
+                          "temperatura"
+                          "atmosfera"
+                          "curiosidades";
+  }
+
 }
 #particles-js {
   height: 100vh;
@@ -373,3 +345,17 @@ li a{
   position: fixed;
   z-index: -1;
 }
+
+
+/* Alejandro esto creo que no hace na, luego me dices qué hace
+@keyframes movimientoImagen {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+
+}*/
