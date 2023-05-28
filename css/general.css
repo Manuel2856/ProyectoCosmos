@@ -21,8 +21,8 @@ nav {
   height: 4rem;
   display: flex;
   align-items: center;
-  justify-content: space-around  ;
-  max-width: 100%;
+  background-color: #34495e;
+  border: 2px solid rgba(255, 255, 255, 0.514);
 }
 nav ul{
   display: flex;
@@ -131,8 +131,7 @@ main {
     color: black;
   }
 
-.txtN-inicio {
-  animation: colorChange 15s infinite; /* Aplica la animación a la clase .txtN-INICIO */
+  /* Color final igual al inicial */
 }
 
 .txtN-sol {
@@ -179,20 +178,15 @@ main {
   color: #0000cd;
   /* Color para NEPTUNO (Azul medio) */
 }
-.txtN-inicio,
-.txtN-sol,
-.txtN-mercurio,
-.txtN-venus,
-.txtN-tierra,
-.txtN-marte,
-.txtN-jupiter,
-.txtN-saturno,
-.txtN-urano,
-.txtN-neptuno,
-.txtB-planetas,
-.txt-contactanos {
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Agrega un bordeado negro a las palabras */
-  font-size: 1.5rem;
+
+nav > a,
+button {
+  background: none;
+  border: none; 
+  font-size: 2rem;
+  font-style: oblique;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
 }
 
 header {
@@ -340,9 +334,12 @@ footer p {
 li a{
   font-size:2rem;
 }
-.dropdown:hover .dropdown-content {
-  display: absolute;
-  z-index: 1;
+
+.dropdown:hover + .dropdown-content {
+  display: flex;
+  position: absolute;
+  margin-right:60%;
+  margin-top: 3.22rem;
 }
 
 
