@@ -16,8 +16,8 @@ body {
   height: 5rem;
   display: flex;
   align-items: center;
-  justify-content: space-around  ;
-  max-width: 100%;
+  background-color: #34495e;
+  border: 2px solid rgba(255, 255, 255, 0.514);
 }
 .barra-de-navegacion ul{
   display: flex;
@@ -28,20 +28,61 @@ body {
   margin-right: 2rem;
 }
 @keyframes colorChange {
-  0% { color: black; } /* Color inicial */
-  10% { color: #FFD700; } /* Color para SOL */
-  20% { color: #BEBEBE; } /* Color para MERCURIO */
-  30% { color: #FF7F50; } /* Color para VENUS */
-  40% { color: #008000; } /* Color para TIERRA */
-  50% { color: #FF4500; } /* Color para MARTE */
-  60% { color: #B8860B; } /* Color para JÚPITER */
-  70% { color: #CD853F; } /* Color para SATURNO */
-  80% { color: #00CED1; } /* Color para URANO */
-  90% { color: #0000CD; } /* Color para NEPTUNO */
-  100% { color: black; } /* Color final igual al inicial */
-}
-.txtN-inicio {
-  animation: colorChange 15s infinite; /* Aplica la animación a la clase .txtN-INICIO */
+  0% {
+    color: black;
+  }
+
+  /* Color inicial */
+  10% {
+    color: #ffd700;
+  }
+
+  /* Color para SOL */
+  20% {
+    color: #bebebe;
+  }
+
+  /* Color para MERCURIO */
+  30% {
+    color: #ff7f50;
+  }
+
+  /* Color para VENUS */
+  40% {
+    color: #008000;
+  }
+
+  /* Color para TIERRA */
+  50% {
+    color: #ff4500;
+  }
+
+  /* Color para MARTE */
+  60% {
+    color: #b8860b;
+  }
+
+  /* Color para JÚPITER */
+  70% {
+    color: #cd853f;
+  }
+
+  /* Color para SATURNO */
+  80% {
+    color: #00ced1;
+  }
+
+  /* Color para URANO */
+  90% {
+    color: #0000cd;
+  }
+
+  /* Color para NEPTUNO */
+  100% {
+    color: black;
+  }
+
+  /* Color final igual al inicial */
 }
 .txtN-sol {
   color: #FFD700; /* Color para SOL (Amarillo Dorado) */
@@ -78,20 +119,15 @@ body {
 .txtN-neptuno {
   color: #0000CD; /* Color para NEPTUNO (Azul medio) */
 }
-.txtN-inicio,
-.txtN-sol,
-.txtN-mercurio,
-.txtN-venus,
-.txtN-tierra,
-.txtN-marte,
-.txtN-jupiter,
-.txtN-saturno,
-.txtN-urano,
-.txtN-neptuno,
-.txtB-planetas,
-.txt-contactanos {
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Agrega un bordeado negro a las palabras */
-  font-size: 1.5rem;
+
+nav > a,
+button {
+  background: none;
+  border: none; 
+  font-size: 2rem;
+  font-style: oblique;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
 }
 
 header {
@@ -224,9 +260,12 @@ footer p{
   display: inline;
   border:0;
 }
-.dropdown:hover .dropdown-content {
-  display: absolute;
-  z-index: 1;
+
+.dropdown:hover + .dropdown-content {
+  display: flex;
+  position: absolute;
+  margin-right:60%;
+  margin-top: 3.22rem;
 }
 
 
