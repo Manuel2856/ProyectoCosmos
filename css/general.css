@@ -178,6 +178,9 @@ main {
   color: #0000cd;
   /* Color para NEPTUNO (Azul medio) */
 }
+.txtN-luna{
+  color:#D3D3D3;
+}
 
 .txt-contactanos,.txtN-inicio, 
 button {
@@ -362,18 +365,6 @@ li a{
   .imagen-planeta {
     max-width: 10rem;
     max-height: 10rem;
-  }
-
-  .txtN-sol,
-  .txtN-mercurio,
-  .txtN-venus,
-  .txtN-tierra,
-  .txtN-marte,
-  .txtN-jupiter,
-  .txtN-saturno,
-  .txtN-urano,
-  .txtN-neptuno {
-    display: none;
   }
 }
 #particles-js {
