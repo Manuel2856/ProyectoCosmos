@@ -10,7 +10,9 @@
   /*Si la fuente no se encuentra disponible, el navegador utiliza otra por defecto*/
   src: url(../fonts/SlatePro-Black.ttf);
 }
-
+nav >p{
+  border: 1px solid white;
+}
 body {
   background-color: #000;
 }
@@ -28,6 +30,11 @@ main p {
   font-family: Helvetica;
   font-size: 1.2rem;
 
+}
+a button {
+  text-decoration: none;
+  enable-background: 0%;
+  color: white;
 }
 
 .etimologia p {
@@ -311,6 +318,27 @@ main article {
   background-color: #72ff6a;
 
 }
+h1 {
+  width: 80%;
+  margin: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  font: 1em "Oswald", sans-serif;
+  color: rgba(255, 255, 255, 0.521);
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+}
+span {
+  font: 8em "Oswald", sans-serif;
+  background-image: url(../images/fondoTituloPLaneta.png);
+  -webkit-background-clip: text;
+  background-clip: text;
 
 .curiosidades:hover,
 .temperatura:hover {
@@ -415,6 +443,12 @@ footer p {
       "curiosidades";
   }
 
+}
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
 }
 
 #particles-js {
