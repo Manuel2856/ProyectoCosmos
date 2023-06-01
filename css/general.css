@@ -308,6 +308,13 @@ header {
     inset -50px -10px 20px rgba(117, 79, 221, 0.7);
   animation: rotacion 20s linear infinite;
 }
+.luna {
+
+  background-image: url(../images/Luna/Luna.webp);
+  box-shadow: inset 0 0 20px #8dadff,
+    inset -50px -10px 20px rgba(117, 79, 221, 0.7);
+  animation: rotacion 20s linear infinite;
+}
 
 @keyframes rotacion {
   0% {
@@ -433,6 +440,29 @@ main article {
 .t-curiosidades:hover,
 .t-temperatura:hover {
   background-color: #22fe31;
+  transition-duration: 1s;
+
+}
+/*-----------------------*/
+.l-etimologia {
+  background-color: #a5a5a5;
+
+}
+
+.l-etimologia:hover{
+  background-color: #6e6d96;
+  transition-duration: 1s;
+
+}
+
+.l-temperatura {
+  background-color: #5b638b;
+
+}
+
+
+.l-temperatura:hover {
+  background-color: #4c427b;
   transition-duration: 1s;
 
 }
@@ -596,6 +626,9 @@ main article {
 
 #tierrah1 {
   background-image: url(../images/Tierra/fondo-Titulo-Tierra.png);
+}
+#lunah1 {
+  background-image: url(../images/Luna/fondo-Titulo-Luna.webp);
 }
 
 #marteh1 {
