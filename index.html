@@ -9,43 +9,49 @@
     <link rel="icon" href="../images/favicon.webp" type="image/x-icon" />
   </head>
   <body>
-    <nav class="barra-de-navegacion">
+    <nav>
       <ul>
-        <li>
-          <p class="txtN-inicio activo"><a href="./index.html">INICIO</a></p>
-        </li>
-        <li>
-          <p class="txtN-sol"><a href="./html/sol.html">SOL</a></p>
-        </li>
-        <li>
-          <p class="txtN-mercurio">
-            <a href="./html/mercurio.html">MERCURIO</a>
-          </p>
-        </li>
-        <li>
-          <p class="txtN-venus"><a href="./html/venus.html">VENUS</a></p>
-        </li>
-        <li>
-          <p class="txtN-tierra activo">
-            <a href="./html/tierra.html">TIERRA</a>
-          </p>
-        </li>
-        <li>
-          <p class="txtN-marte"><a href="./html/marte.html">MARTE</a></p>
-        </li>
-        <li>
-          <p class="txtN-jupiter"><a href="./html/jupiter.html">JÚPITER</a></p>
-        </li>
-        <li>
-          <p class="txtN-saturno"><a href="./html/saturno.html">SATURNO</a></p>
-        </li>
-        <li>
-          <p class="txtN-urano"><a href="./html/urano.html">URANO</a></p>
-        </li>
-        <li>
-          <p class="txtN-neptuno"><a href="./html/neptuno.html">NEPTUNO</a></p>
-        </li>
+          <li><a class="txt-contactanos" href="../index.html">CONTACTO</a></li>
+            <li>
+              <div class="dropdown">
+                <button>PLANETAS</button>
+                <div class="dropdown-content">
+                  <a href="./html/mercurio.html" id="txtN-mercurio">MERCURIO</a>
+                  <a href="./html/venus.html" id="txtN-venus">VENUS</a>
+                  <a href="./html/marte.html" id="txtN-marte">MARTE</a>
+                  <a href="./html/jupiter.html" id="txtN-jupiter">JUPITER</a>
+                  <a href="./html/saturno.html" id="txtN-saturno">SATURNO</a>
+                  <a href="./html/urano.html" id="txtN-urano">URANO</a>
+                  <a href="./html/neptuno.html" id="txtN-neptuno">NEPTUNO</a>
+                  <a href="./html/tierra.html" id="txtN-tierra">TIERRA</a>
+                  <a href="./html/luna.html" id="txtN-luna">LA LUNA</a>
+                </div>
+            </li>
       </ul>
-    </nav>
+      </nav>
+    <header>
+      <div class=" tierra-titulo">
+        <p>Cosmos</p>
+        <iframe class="iframe-sistema-solar"
+        src="https://eyes.nasa.gov/apps/solar-system/#/home"
+        loading="lazy"
+      ></iframe> <br>
+        &mdash; IES JUAN BOSCO &mdash;
+      </div>
+    </header>
+
+    <footer class="footer">
+      <h3>INFORMACIÓN ADICIONAL</h3>
+      <p>
+        Página Web realizada por: Manuel Garrido Cámara, Alejandro y Juvenal
+        Gómez Camuñas bajo la supervisión de María Teresa Olmedilla Escribano.
+      </p>
+      <p>
+        Han participado en la elaboración de esta web los alumnos de Marina
+        Martínez Bonat de 3º de ESO A, B y C y los alumnos de Alicia Portero
+        Hernández dentro del programa de formación en competencias STEAM en el
+        que participa el IES Juan Bosco de Alcázar de San Juan.
+      </p>
+    </footer>
   </body>
 </html>
