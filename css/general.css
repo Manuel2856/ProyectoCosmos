@@ -3,58 +3,91 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: "Slate pro";
-  font-display: swap; /*Si la fuente no se encuentra disponible, el navegador utiliza otra por defecto*/
+  font-display: swap;
+  /*Si la fuente no se encuentra disponible, el navegador utiliza otra por defecto*/
   src: url(../fonts/SlatePro-Black.ttf);
 }
+
 body {
   background-color: #000;
 }
+
 /*BARRA DE NAVEGACIÓN*/
 nav {
   height: 4rem;
   display: flex;
   align-items: center;
-  background-color: #34495e;
-  border: 2px solid rgba(255, 255, 255, 0.514);
+
+
 }
-nav ul, nav ul >li{
+
+main p {
+  font-family: Helvetica;
+  font-size: 1.2rem;
+
+}
+
+.etimologia p {
+  text-align: center;
+}
+
+nav ul,
+nav ul>li {
   display: flex;
+  text-shadow: 1px 1px 1px black;
+
   width: 100%;
+
   justify-content: space-around;
   list-style: none;
 }
+
 /* Estilos del menú desplegable */
-.dropdown-content{
-  display: none;
-  background-color: #090834;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+.dropdown {
+  display: inline-block;
+  position: relative;
 }
 
-.dropdown-content ul {
-  list-style-type: none;
+div ul {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  margin: 0;
 }
 
-.dropdown-content ul li {
-  padding: 8px 12px;
-}
-li a{
-  font-size:2rem;
-}
-.dropdown:hover + .dropdown-content {
-  display: flex;
+.dropdown-content {
+  display: none;
   position: absolute;
-  margin-top: 3.22rem;
+  border: 0px 1px 1px 1px solid white;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 5px;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #02c4e2;
+}
+
+li a {
+  font-size: 1.8rem;
+}
+
 .txtN-inicio {
   animation: colorChange 15s infinite;
 }
+
 @keyframes colorChange {
   0% {
     color: black;
@@ -107,68 +140,69 @@ li a{
 
   /* Color para NEPTUNO */
   100% {
-    color: black;
+    color: rgb(255, 0, 0);
   }
 
   /* Color final igual al inicial */
 }
 
-.txtN-sol {
+#txtN-sol {
   color: #ffd700;
   /* Color para SOL (Amarillo Dorado) */
 }
 
-.txtN-mercurio {
+#txtN-mercurio {
   color: #bebebe;
   /* Color para MERCURIO (Gris) */
 }
 
-.txtN-venus {
+#txtN-venus {
   color: #ff7f50;
   /* Color para VENUS (Naranja claro) */
 }
 
-.txtN-tierra {
+#txtN-tierra {
   color: #008000;
   /* Color para TIERRA (Verde) */
 }
 
-.txtN-marte {
+#txtN-marte {
   color: #ff4500;
   /* Color para MARTE (Naranja oscuro) */
 }
 
-.txtN-jupiter {
+#txtN-jupiter {
   color: #b8860b;
   /* Color para JÚPITER (Dorado) */
 }
 
-.txtN-saturno {
+#txtN-saturno {
   color: #cd853f;
   /* Color para SATURNO (Marrón claro) */
 }
 
-.txtN-urano {
+#txtN-urano {
   color: #00ced1;
   /* Color para URANO (Cian) */
 }
 
-.txtN-neptuno {
+#txtN-neptuno {
   color: #0000cd;
   /* Color para NEPTUNO (Azul medio) */
 }
-.txtN-luna{
-  color:#D3D3D3;
+
+#txtN-luna {
+  color: #D3D3D3;
 }
 
-.txt-contactanos,.txtN-inicio, 
+.txt-contactanos,
+.txtN-inicio,
 button {
   background: none;
-  border: none; 
+  border: none;
   text-decoration: none;
   font-size: 2rem;
-  font-style: oblique;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: white;
 }
 
@@ -177,11 +211,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
-.informacion-cosmos {
+
+.tierra-titulo {
   width: 90%;
-  margin-top: 5rem;
+  margin-top: 2rem;
   text-transform: uppercase;
   text-align: center;
   border: 4px double rgba(255, 255, 255, 0.25);
@@ -190,11 +225,21 @@ header {
   color: rgba(255, 255, 255, 0.521);
   padding: 0.25em 0 0.325em;
 }
-.imagen-planeta {
+#cohete{
+  transition-duration: 2s;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 4px;
+  height: 4px;
+  
+}
+
+.tierra {
   width: 25em;
   height: 25em;
   border-radius: 50%;
-  background-image: url(../images/mapa-tierra.webp);
+  background-image: url(../images/Tierra/mapa-tierra.webp);
   box-shadow: inset 0 0 20px #dde6fd,
     inset -50px -10px 20px rgba(255, 255, 255, 0.7);
   background-size: cover;
@@ -226,6 +271,7 @@ main {
   margin-left: 5%;
   margin-right: 5%;
 }
+
 .etimologia {
   grid-area: etimologia;
 }
@@ -241,19 +287,39 @@ main {
 .curiosidades {
   grid-area: curiosidades;
 }
+
+main article {
+  border-radius: 45px;
+  border: 5px solid #ffffff;
+}
+
 .etimologia,
 .atmosfera {
-  background-color: #8f8cc1;
-  border-radius: 45px 5px;
-  border: 5px solid #ffffff;
+  background-color: #4d42cc;
+
+}
+
+.etimologia:hover,
+.atmosfera:hover {
+  background-color: #0d00ff;
+  transition-duration: 1s;
+
 }
 
 .curiosidades,
 .temperatura {
-  background-color: #ff7a31;
-  border-radius: 45px 5px;
-  border: 5px solid #ffffff;
+  background-color: #72ff6a;
+
 }
+
+.curiosidades:hover,
+.temperatura:hover {
+  background-color: #22fe31;
+  transition-duration: 1s;
+
+}
+
+
 .etimologia,
 .atmosfera,
 .curiosidades,
@@ -264,7 +330,7 @@ main {
 
 h1 {
   font: 8em "Oswald", sans-serif;
-  background-image: url(../images/fondoTituloPLaneta.png);
+  background-image: url(../images/Tierra/fondo-Titulo-Tierra.png);
   -webkit-background-clip: text;
   background-clip: text;
   margin-top: 1rem;
@@ -272,9 +338,12 @@ h1 {
   -webkit-text-fill-color: transparent;
   animation: rotacion 30s linear infinite;
 }
+
 h2 {
   color: #f5f5f5;
   font-family: "Slate pro";
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px black;
   text-align: center;
 }
 
@@ -283,6 +352,7 @@ h3 {
   color: white;
   padding: 1rem;
 }
+
 /*FOOTER*/
 
 footer {
@@ -300,9 +370,10 @@ footer p {
   margin: 2rem;
   color: white;
 }
+
 @media screen and (max-width: 1024px) {
   .imagen-planeta {
-    
+
     max-width: 20rem;
     max-height: 20rem;
   }
@@ -314,31 +385,38 @@ footer p {
     max-width: 15rem;
     max-height: 15rem;
   }
-  h1{
+
+  h1 {
     font-size: 6rem;
   }
 }
 
 @media screen and (max-width: 480px) {
 
-  header{
+  header {
     margin-top: 5rem;
   }
-  .txtN-inicio,.txt-contactanos,button{
+
+  .txtN-inicio,
+  .txt-contactanos,
+  button {
     font-size: 1.5rem;
   }
-  h1{
+
+  h1 {
     font-size: 5rem;
   }
-  main{
+
+  main {
     grid-template-columns: repeat(1, 2fr);
     grid-template-areas: "etimologia"
-                          "temperatura"
-                          "atmosfera"
-                          "curiosidades";
+      "temperatura"
+      "atmosfera"
+      "curiosidades";
   }
 
 }
+
 #particles-js {
   height: 100vh;
   width: 100%;
