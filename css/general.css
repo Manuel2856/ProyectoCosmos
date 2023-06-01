@@ -367,6 +367,8 @@ main article {
 .me-etimologia,
 .me-atmosfera {
   background-color: #a5a5a5;
+  box-shadow: 0px 0px 10px #dbdada, 0px 0px 20px #646464, 0px 0px 30px #2e2e2d,
+  0px 0px 40px #181818;
 
 }
 
@@ -380,6 +382,8 @@ main article {
 .me-curiosidades,
 .me-temperatura {
   background-color: #5b638b;
+  box-shadow: 0px 0px 10px #dbdada, 0px 0px 20px #646464, 0px 0px 30px #c03ae6,
+  0px 0px 40px #7842eb;
 
 }
 
@@ -394,6 +398,9 @@ main article {
 .v-etimologia,
 .v-atmosfera {
   background-color: #dfaa37;
+  box-shadow: 0px 0px 10px #f4d391, 0px 0px 20px #f29d72, 0px 0px 30px #f59e2c,
+  0px 0px 40px #ff4800;
+
 
 }
 
@@ -407,6 +414,9 @@ main article {
 .v-curiosidades,
 .v-temperatura {
   background-color: #e78a43;
+  box-shadow: 0px 0px 10px #f4d391, 0px 0px 20px #f29d72, 0px 0px 30px #f59e2c,
+  0px 0px 40px #ff4800;
+
 
 }
 
@@ -421,6 +431,9 @@ main article {
 .t-etimologia,
 .t-atmosfera {
   background-color: #4d42cc;
+  box-shadow: 0px 0px 10px #a695fa, 0px 0px 20px #7074f2, 0px 0px 30px #5c31dd,
+  0px 0px 40px #3c00ff;
+
 
 }
 
@@ -434,6 +447,10 @@ main article {
 .t-curiosidades,
 .t-temperatura {
   background-color: #72ff6a;
+  box-shadow: 0px 0px 10px #94ec9d, 0px 0px 20px #6dec75, 0px 0px 30px #18ed3b,
+  0px 0px 40px #00f408;
+
+
 
 }
 
@@ -446,6 +463,9 @@ main article {
 /*-----------------------*/
 .l-etimologia {
   background-color: #a5a5a5;
+  box-shadow: 0px 0px 10px #dbdada, 0px 0px 20px #646464, 0px 0px 30px #2e2e2d,
+  0px 0px 40px #181818;
+
 
 }
 
@@ -457,6 +477,8 @@ main article {
 
 .l-temperatura {
   background-color: #5b638b;
+  box-shadow: 0px 0px 10px #dbdada, 0px 0px 20px #646464, 0px 0px 30px #2e2e2d,
+    0px 0px 40px #181818;
 
 }
 
@@ -504,6 +526,8 @@ main article {
 .j-etimologia,
 .j-atmosfera {
   background-color: #df8237;
+  box-shadow: 0px 0px 10px #edc06d, 0px 0px 20px #f4b257, 0px 0px 30px #f5bb27,
+  0px 0px 40px #f2ab06;
 
 }
 
@@ -517,12 +541,14 @@ main article {
 .j-curiosidades,
 .j-temperatura {
   background-color: #F0E68C;
+  box-shadow: 0px 0px 10px #edc06d, 0px 0px 20px #f4b257, 0px 0px 30px #f5bb27,
+  0px 0px 40px #f2ab06;
 
 }
 
 .j-curiosidades:hover,
 .j-temperatura:hover {
-  background-color: #ab9b08;
+  background-color: #b0620e;
   transition-duration: 1s;
 
 }
@@ -531,6 +557,8 @@ main article {
 .s-etimologia,
 .s-atmosfera {
   background-color: #cc37df;
+  box-shadow: 0px 0px 10px #f7bdf4, 0px 0px 20px #e257f4, 0px 0px 30px #eb27f5,
+  0px 0px 40px #d606f2;
 
 }
 
@@ -544,6 +572,8 @@ main article {
 .s-curiosidades,
 .s-temperatura {
   background-color: #f0d78c;
+  box-shadow: 0px 0px 10px #edc06d, 0px 0px 20px #f4b257, 0px 0px 30px #f5bb27,
+  0px 0px 40px #f2ab06;
 
 }
 
@@ -558,6 +588,8 @@ main article {
 .u-etimologia,
 .u-atmosfera {
   background-color: #37dadf;
+  box-shadow: 0px 0px 10px #6de2ed, 0px 0px 20px #57e2f4, 0px 0px 30px #279ff5,
+  0px 0px 40px #0659f2;
 
 }
 
@@ -571,6 +603,8 @@ main article {
 .u-curiosidades,
 .u-temperatura {
   background-color: #8c9df0;
+  box-shadow: 0px 0px 10px #6db8ed, 0px 0px 20px #57bdf4, 0px 0px 30px #27c2f5,
+  0px 0px 40px #0641f2;
 
 }
 
@@ -585,6 +619,8 @@ main article {
 .n-etimologia,
 .n-atmosfera {
   background-color: #37a7df;
+  box-shadow: 0px 0px 10px #6db8ed, 0px 0px 20px #57bdf4, 0px 0px 30px #27c2f5,
+  0px 0px 40px #0641f2;
 
 }
 
@@ -598,7 +634,8 @@ main article {
 .n-curiosidades,
 .n-temperatura {
   background-color: #8f8cf0;
-
+  box-shadow: 0px 0px 10px #6db8ed, 0px 0px 20px #57bdf4, 0px 0px 30px #27c2f5,
+  0px 0px 40px #0641f2;
 }
 
 .n-curiosidades:hover,
@@ -614,6 +651,12 @@ main article {
 .curiosidades,
 .temperatura {
   padding: 0.5rem 1rem 1rem 1rem;
+}
+#indexh1 {
+  background-image: url(../images/Mercurio/fondo-Titulo-Mercurio.webp);
+  text-align: center;
+  width: 80%;
+  font-size: 2.5rem;
 }
 
 #mercurioh1 {
@@ -740,24 +783,14 @@ footer p {
   }
 
 }
-
+iframe{
+  width: 80%;
+  height: 70vh;
+  margin: 2vw;
+}
 #particles-js {
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: -1;
 }
-
-
-/* Alejandro esto creo que no hace na, luego me dices qué hace
-@keyframes movimientoImagen {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 100%;
-  }
-}
-
-
-}*/
