@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marte</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MArte</title>
     <link rel="stylesheet" href="../css/general.css">
     <link rel="icon" href="../images/favicon.webp" type="image/x-icon">
     <meta
@@ -12,82 +12,89 @@
       content="Página web dedicada a Marte, etimología, atmósfera, temperatura y algunas curiosidades">
   </head>
   <body>
-    <nav class="barra-de-navegacion">
+    <div id="particles-js"></div>
+    <nav>
       <ul>
+        <li><a class="txtN-inicio" href="../index.html">INICIO</a></li>
+        <li><a class="txt-contactanos" href="../index.html">CONTACTO</a></li>
         <li>
-          <p class="txtN-inicio"><a href="../index.html">INICIO</a></p>
-        </li>
-        <li>
-          <p class="txtN-sol"><a href="../html/sol.html">SOL</a></p>
-        </li>
-        <li>
-          <p class="txtN-mercurio">
-            <a href="../html/mercurio.html">MERCURIO</a>
-          </p>
-        </li>
-        <li>
-          <p class="txtN-venus"><a href="../html/venus.html">VENUS</a></p>
-        </li>
-        <li>
-          <p class="txtN-tierra"><a href="../html/tierra.html">TIERRA</a></p>
-        </li>
-        <li>
-          <p class="txtN-jupiter"><a href="../html/jupiter.html">JÚPITER</a></p>
-        </li>
-        <li>
-          <p class="txtN-saturno"><a href="../html/saturno.html">SATURNO</a></p>
-        </li>
-        <li>
-          <p class="txtN-urano"><a href="../html/urano.html">URANO</a></p>
-        </li>
-        <li>
-          <p class="txtN-neptuno"><a href="../html/neptuno.html">NEPTUNO</a></p>
-        </li>
-      </ul>
-    </nav>
-    <header>
-     <div class="marte"></div>
-        <div class="informacion-cosmos">
+          <div class="dropdown">
+            <button>PLANETAS</button>
+            <div class="dropdown-content">
+              <a href="./tierra.html" id="txtN-tierra">TIERRA</a>
+              <a href="./mercurio.html" id="txtN-mercurio">MERCURIO</a>
+              <a href="./venus.html" id="txtN-venus">VENUS</a>
+              <a href="./jupiter.html" id="txtN-jupiter">JUPITER</a>
+              <a href="./saturno.html" id="txtN-saturno">SATURNO</a>
+              <a href="./tierra.html" id="txtN-urano">URANO</a>
+              <a href="./tierra.html" id="txtN-neptuno">NEPTUNO</a>
+            </div>
+          </li>
+        </ul>
+
+      </nav>
+      <header>
+        <div class="planeta marte"></div>
+        <div class=" titulo">
           <p>Cosmos</p>
-          <h1> MARTE</h1>
+          <h1 id="marteh1"> MARTE</h1>
           &mdash; IES JUAN BOSCO &mdash;
         </div>
-    </header>
-    <main>
-      <article class="etimologia">
-        <h2>ETIMOLOGÍA</h2>
+      </header>
+      <main>
+        <article class="etimologia m-etimologia">
+          <h2>ETIMOLOGÍA</h2>
+          <p>
+            Su nombre se debe al dios de la guerra según la mitología romana
+            (Ares
+            para los griegos). Marte tiene la montaña más alta conocida de todo
+            el
+            sistema solar.
+          </p>
+        </article>
+        <article class="temperatura m-temperatura">
+          <h2>TEMPERATURA Y AGUA</h2>
+          <p>TEMPERATURA DEL DÍA: 0ºC</p>
+          <p>TEMPERATURA NOCHE:-129</p>
+          <p>TEMPERATURA MEDIA: -50ºC</p>
+          <p>GRAVEDAD: 3,721 m/s2</p>
+          <p>No hay presencia de agua líquida.</p>
+        </article>
+        <article class="atmosfera m-atmosfera">
+          <h2>ATMÓSFERA</h2>
+          <p>ATMÓSFERA: 95% es dióxido, 2,7% es nitrógeno y 1,7% es argón</p>
+          <p>
+            La atmósfera de Marte es ligera, no se .soportan grandes presiones .
+            Presenta estaciones que duran el doble que en la Tierra
+          </p>
+        </article>
+        <article class="curiosidades m-curiosidades">
+          <h2>CURIOSIDADES</h2>
+          <p>Marte es el 4º planeta en orden de distancia al Sol.</p>
+          <p>Es el 2º más pequeño del sistema solar después de Mercurio.</p>
+          <p>Un año en Marte es de 687 días.</p>
+          <p>Un año en Marte dura 25 horas.</p>
+          <p>Marte es un planeta desértico y frío</p>
+          <p>Es la mitad del tamaño de la Tierra.</p>
+        </article>
+      </main>
+      <footer class="footer">
+        <h3>INFORMACIÓN ADICIONAL</h3>
         <p>
-          Su nombre se debe al dios de la guerra según la mitología romana (Ares
-          para los griegos). Marte tiene la montaña más alta conocida de todo el
-          sistema solar.
+          Página Web realizada por: Manuel Garrido Cámara, Alejandro y Juvenal
+          Gómez Camuñas bajo la supervisión de María Teresa Olmedilla Escribano.
         </p>
-      </article>
-      <article class="temperatura">
-        <h2>TEMPERATURA Y AGUA</h2>
+        <p>
+          Han participado en la elaboración de esta web los alumnos de Marina
+          Martínez Bonat de 3º de ESO A, B y C y los alumnos de Alicia Portero
+          Hernández dentro del programa de formación en competencias STEAM en el
+          que participa el IES Juan Bosco de Alcázar de San Juan.
+        </p>
+      </footer>
+      <a href=".txtN-inicio activo" id="cohete"><img
+          src="../images/logo_cohete.png" alt="icono cohete"></a>
+      <script src="../JavaScript/particles.min.js"></script>
+      <script src="../JavaScript/particulas.js"></script>
+    </body>
 
-        <p>TEMPERATURA DEL DÍA: 0ºC</p>
-        <p>TEMPERATURA NOCHE:-129</p>
-        <p>TEMPERATURA MEDIA: -50ºC</p>
-        <p>GRAVEDAD: 3,721 m/s2</p>
-        <p>No hay presencia de agua líquida.</p>
-      </article>
-      <article class="atmosfera">
-        <h2>ATMÓSFERA</h2>
-        <p>ATMÓSFERA: 95% es dióxido, 2,7% es nitrógeno y 1,7% es argón</p>
-        <p>
-          La atmósfera de Marte es ligera, no se .soportan grandes presiones .
-          Presenta estaciones que duran el doble que en la Tierra
-        </p>
-      </article>
-      <article class="curiosidades">
-        <h2>CURIOSIDADES</h2>
-        <p>Marte es el 4º planeta en orden de distancia al Sol.</p>
-        <p>Es el 2º más pequeño del sistema solar después de Mercurio.</p>
-        <p>Un año en Marte es de 687 días.</p>
-        <p>Un año en Marte dura 25 horas.</p>
-        <p>Marte es un planeta desértico y frío</p>
-        <p>Es la mitad del tamaño de la Tierra.</p>
-      </article>
-    </main>
-  </body>
-</html>
+  </html>
