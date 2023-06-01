@@ -428,6 +428,13 @@ footer p {
   z-index: -1;
 }
 
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
 
 /* Alejandro esto creo que no hace na, luego me dices qué hace
 @keyframes movimientoImagen {
