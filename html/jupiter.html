@@ -1,103 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Júpiter</title>
-    <link rel="stylesheet" href="../css/general.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="icon" href="../images/favicon.webp" type="image/x-icon">
+    <meta
+      name="description"
+      content="Página web dedicada a Jupiter, etimología, atmósfera, temperatura y algunas curiosidades">
   </head>
   <body>
-    <header>
-      <div id="jupiter"></div>
-      <h1>Júpiter</h1>
-    </header>
-    <main>
-      <nav class="barra-de-navegacion">
-        <ul>
-          <li>
-            <p class="txtN-inicio"><a href="../index.html">INICIO</a></p>
-          </li>
-          <li>
-            <p class="txtN-sol"><a href="../html/sol.html">SOL</a></p>
-          </li>
-          <li>
-            <p class="txtN-mercurio">
-              <a href="../html/mercurio.html">MERCURIO</a>
-            </p>
-          </li>
-          <li>
-            <p class="txtN-venus"><a href="../html/venus.html">VENUS</a></p>
-          </li>
-          <li>
-            <p class="txtN-tierra"><a href="../html/tierra.html">TIERRA</a></p>
-          </li>
-          <li>
-            <p class="txtN-marte"><a href="../html/marte.html">MARTE</a></p>
-          </li>
-          <li>
-            <p class="txtN-jupiter activo">
-              <a href="../html/jupiter.html">JÚPITER</a>
-            </p>
-          </li>
-          <li>
-            <p class="txtN-saturno">
-              <a href="../html/saturno.html">SATURNO</a>
-            </p>
-          </li>
-          <li>
-            <p class="txtN-urano"><a href="../html/urano.html">URANO</a></p>
-          </li>
-          <li>
-            <p class="txtN-neptuno">
-              <a href="../html/neptuno.html">NEPTUNO</a>
-            </p>
+
+    <div id="particles-js"></div>
+    <nav>
+      <ul>
+        <li><a class="txtN-inicio" href="../index.html">INICIO</a></li>
+        <li><a class="txt-contactanos" href="../index.html">CONTACTO</a></li>
+        <li>
+          <div class="dropdown">
+            <button>PLANETAS</button>
+            <div class="dropdown-content">
+              <a href="./mercurio.html" id="txtN-mercurio">MERCURIO</a>
+              <a href="./venus.html" id="txtN-venus">VENUS</a>
+              <a href="./marte.html" id="txtN-marte">MARTE</a>
+              <a href="./jupiter.html" id="txtN-jupiter">JUPITER</a>
+              <a href="./saturno.html" id="txtN-saturno">SATURNO</a>
+              <a href="./tierra.html" id="txtN-urano">URANO</a>
+              <a href="./tierra.html" id="txtN-neptuno">NEPTUNO</a>
+            </div>
           </li>
         </ul>
-      </nav>
-      <article class="etimologia">
-        <h2>ETIMOLOGÍA</h2>
-        <p>
-          Júpiter deriva de Ius-piter, o sea, últimamente de Deus-pater "dios
-          padre"
-        </p>
-      </article>
-      <article class="temperatura">
-        <h2>PRECIPITACIONES</h2>
 
+      </nav>
+      <header>
+        <div class="planeta jupiter"></div>
+        <div class="  titulo ">
+          <p>Cosmos</p>
+          <h1 id="jupiterh1"> JUPITER</h1>
+          &mdash; IES JUAN BOSCO &mdash;
+        </div>
+      </header>
+      <main>
+        <article class="etimologia j-etimologia">
+          <h2>ETIMOLOGÍA</h2>
+          <p>
+            Júpiter deriva de Ius-piter, o sea, últimamente de Deus-pater "dios
+            padre"
+          </p>
+        </article>
+        <article class="temperatura j-temperatura">
+          <h2>PRECIPITACIONES</h2>
+
+          <p>
+            Júpiter tiene una variación extremada de lluvia mensual por
+            estación.
+            Llueve durante el año en Júpiter. El mes con más lluvia en Júpiter
+            es
+            septiembre, con un promedio de 147 milímetros de lluvia. El mes con
+            menos lluvia en Júpiter es diciembre, con un promedio de 45
+            milímetros
+            de lluvia.
+          </p>
+          <p>
+            Su atmósfera se compone aproximadamente de un 82% de hidrógeno y un
+            17% de helio. A estos componentes principales hay que sumarle otros
+            en
+            mucho menor porcentaje como metano, vapor de agua, amoniaco, etano,
+            fosfina, sulfuro de hidrógeno e hidrosulfuro.
+          </p>
+        </article>
+        <article class="atmosfera j-atmosfera">
+          <h2>ATMÓSFERA</h2>
+          <p>
+            Sin duda, uno de los aspectos más fascinantes de Júpiter es su
+            atmósfera, principalmente compuesta de hidrógeno en más de uno 80%
+            además de grandes proporciones de helio amoniaco y etano.
+          </p>
+        </article>
+        <article class="curiosidades j-curiosidades">
+          <h2>CURIOSIDADES</h2>
+          <p>0d 9h 56m temperatura del día completo.</p>
+          <p>De la noche 4:56h</p>
+          <p>Del día 5 horas.</p>
+          <p>
+            Sin duda, uno de los aspectos más fascinantes de Júpiter es su
+            atmósfera, principalmente compuesta de hidrógeno en más de uno 80%
+            además de grandes proporciones de helio amoniaco y etano.
+          </p>
+        </article>
+      </main>
+      <footer class="footer">
+        <h3>INFORMACIÓN ADICIONAL</h3>
         <p>
-          Júpiter tiene una variación extremada de lluvia mensual por estación.
-          Llueve durante el año en Júpiter. El mes con más lluvia en Júpiter es
-          septiembre, con un promedio de 147 milímetros de lluvia. El mes con
-          menos lluvia en Júpiter es diciembre, con un promedio de 45 milímetros
-          de lluvia.
+          Página Web realizada por: Manuel Garrido Cámara, Alejandro y Juvenal
+          Gómez Camuñas bajo la supervisión de María Teresa Olmedilla Escribano.
         </p>
         <p>
-          Su atmósfera se compone aproximadamente de un 82% de hidrógeno y un
-          17% de helio. A estos componentes principales hay que sumarle otros en
-          mucho menor porcentaje como metano, vapor de agua, amoniaco, etano,
-          fosfina, sulfuro de hidrógeno e hidrosulfuro.
+          Han participado en la elaboración de esta web los alumnos de Marina
+          Martínez Bonat de 3º de ESO A, B y C y los alumnos de Alicia Portero
+          Hernández dentro del programa de formación en competencias STEAM en el
+          que participa el IES Juan Bosco de Alcázar de San Juan.
         </p>
-      </article>
-      <article class="atmosfera">
-        <h2>ATMÓSFERA</h2>
-        <p>
-          Sin duda, uno de los aspectos más fascinantes de Júpiter es su
-          atmósfera, principalmente compuesta de hidrógeno en más de uno 80%
-          además de grandes proporciones de helio amoniaco y etano.
-        </p>
-      </article>
-      <article class="curiosidades">
-        <h2>CURIOSIDADES</h2>
-        <p>0d 9h 56m temperatura del día completo.</p>
-        <p>De la noche 4:56h</p>
-        <p>Del día 5 horas.</p>
-        <p>
-          Sin duda, uno de los aspectos más fascinantes de Júpiter es su
-          atmósfera, principalmente compuesta de hidrógeno en más de uno 80%
-          además de grandes proporciones de helio amoniaco y etano.
-        </p>
-      </article>
-    </main>
-  </body>
-</html>
+      </footer>
+      <a href=".txtN-inicio activo" id="cohete"><img
+          src="../images/logo_cohete.png" alt="icono cohete"></a>
+
+      <script src="../JavaScript/particles.min.js"></script>
+      <script src="../JavaScript/particulas.js"></script>
+    </body>
+  </html>
