@@ -1,84 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urano</title>
-</head>
-<body>
-    <nav class="barra-de-navegacion">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="icon" href="../images/favicon.webp" type="image/x-icon">
+    <meta
+      name="description"
+      content="Página web dedicada a Urano, etimología, atmósfera, temperatura y algunas curiosidades">
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <nav>
       <ul>
+        <li><a class="txtN-inicio" href="../index.html">INICIO</a></li>
+        <li><a class="txt-contactanos" href="../index.html">CONTACTO</a></li>
         <li>
-          <p class="txtN-inicio"><a href="../index.html">INICIO</a></p>
-        </li>
-        <li>
-          <p class="txtN-sol"><a href="../html/sol.html">SOL</a></p>
-        </li>
-        <li>
-          <p class="txtN-mercurio">
-            <a href="../html/mercurio.html">MERCURIO</a>
-          </p>
-        </li>
-        <li>
-          <p class="txtN-venus"><a href="../html/venus.html">VENUS</a></p>
-        </li>
-        <li>
-          <p class="txtN-tierra"><a href="#">TIERRA</a></p>
-        </li>
-        <li>
-          <p class="txtN-marte"><a href="../html/marte.html">MARTE</a></p>
-        </li>
-        <li>
-          <p class="txtN-jupiter"><a href="../html/jupiter.html">JÚPITER</a></p>
-        </li>
-        <li>
-          <p class="txtN-saturno activo">
-            <a href="../html/saturno.html">SATURNO</a>
-          </p>
-        </li>
-        <li>
-          <p class="txtN-urano"><a href="../html/urano.html">URANO</a></p>
-        </li>
-        <li>
-          <p class="txtN-neptuno"><a href="../html/neptuno.html">NEPTUNO</a></p>
-        </li>
-      </ul>
-    </nav>
-    <header>
-      <div id="saturno"></div>
-      <h1>Urano</h1>
-    </header>
-    <main>
-      <article class="etimologia">
-        <h2>ETIMOLOGÍA</h2>
-        <p>Del latín Uranus, de la traducción latina del griego antiguo representante del cielo y 
+          <div class="dropdown">
+            <button>PLANETAS</button>
+            <div class="dropdown-content">
+              <a href="./tierra.html" id="txtN-tierra">TIERRA</a>
+              <a href="./venus.html" id="txtN-venus">VENUS</a>
+              <a href="./marte.html" id="txtN-marte">MARTE</a>
+              <a href="./jupiter.html" id="txtN-jupiter">JUPITER</a>
+              <a href="./saturno.html" id="txtN-saturno">SATURNO</a>
+              <a href="./tierra.html" id="txtN-urano">URANO</a>
+              <a href="./tierra.html" id="txtN-neptuno">NEPTUNO</a>
+            </div>
+          </li>
+        </ul>
+
+      </nav>
+      <header>
+        <div class="planeta urano"></div>
+        <div class="  titulo ">
+          <p>Cosmos</p>
+          <h1 id="uranoh1"> URANO</h1>
+          &mdash; IES JUAN BOSCO &mdash;
+        </div>
+      </header>
+      <main>
+        <article class="etimologia u-etimologia">
+          <h2>ETIMOLOGÍA</h2>
+          <p>Del latín Uranus, de la traducción latina del griego antiguo
+            representante del cielo y
             padre del dios Saturno.</p>
-      </article>
-      <article class="temperatura">
-        <h2>TEMPERATURA</h2>
-        <p>
+        </article>
+        <article class="temperatura u-temperatura">
+          <h2>TEMPERATURA</h2>
+          <p>
             Tiene una temperatura media de unos -218ºC.
-        </p>
-      </article>
-      <article class="atmosfera">
-        <h2>ATMÓSFERA</h2>
-        <p>
-            Su atmósfera está compuesta de: hidrógeno, helio, metano, agua (aunque mayormente hielo) Y amoníaco.
-        </p>
-      </article>
-      <article class="curiosidades">
-        <h2>CURIOSIDADES</h2>
-        <p>Un día dura: 17h, 14 mins, 24 segs, y un año dura: 84 años terrestres. </p>
-        <p>Su superficie mide 8,083 miles de millones de KM2.</p>
-        <p>Su gravedad es de 8,7 M/S2.</p>
-        <p>Su sistema de anillos muy tenue, fue descubierto en 1977.</p>
-        <p>Urano tiene 27 lunas conocidas, la más grandes son Titania y Oberón. Sus nombres son los de la reina y el rey de 
-            las hadas en la obra El sueño de una noche de verano de Shakespeare</p>
-        <p>Cada una de sus lunas tiene su propia órbita y características únicas.</p>
-      </article>
-    </main>
-    <footer class="footer">
+          </p>
+        </article>
+        <article class="atmosfera u-atmosfera">
+          <h2>ATMÓSFERA</h2>
+          <p>
+            Su atmósfera está compuesta de: hidrógeno, helio, metano, agua
+            (aunque mayormente hielo) Y amoníaco.
+          </p>
+        </article>
+        <article class="curiosidades u-curiosidades">
+          <h2>CURIOSIDADES</h2>
+          <p>Un día dura: 17h, 14 mins, 24 segs, y un año dura: 84 años
+            terrestres. </p>
+          <p>Su superficie mide 8,083 miles de millones de KM2.</p>
+          <p>Su gravedad es de 8,7 M/S2.</p>
+          <p>Su sistema de anillos muy tenue, fue descubierto en 1977.</p>
+          <p>Urano tiene 27 lunas conocidas, la más grandes son Titania y
+            Oberón. Sus nombres son los de la reina y el rey de
+            las hadas en la obra El sueño de una noche de verano de
+            Shakespeare</p>
+          <p>Cada una de sus lunas tiene su propia órbita y características
+            únicas.</p>
+        </article>
+      </main>
+      <footer class="footer">
         <h3>INFORMACIÓN ADICIONAL</h3>
         <p>
           Página Web realizada por: Manuel Garrido Cámara, Alejandro y Juvenal
@@ -91,5 +89,10 @@
           que participa el IES Juan Bosco de Alcázar de San Juan.
         </p>
       </footer>
-  </body>
-</html>
+      <a href=".txtN-inicio activo" id="cohete"><img
+          src="../images/logo_cohete.png" alt="icono cohete"></a>
+
+      <script src="../JavaScript/particles.min.js"></script>
+      <script src="../JavaScript/particulas.js"></script>
+    </body>
+  </html>
