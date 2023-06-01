@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercurio</title>
-    <link rel="stylesheet" href="../css/general.css" />
-    <link rel="icon" href="../images/favicon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="icon" href="../images/favicon.webp" type="image/x-icon">
+    <meta
+      name="description"
+      content="Página web dedicado a Mercurio, etimología, atmósfera, temperatura y algunas curiosidades">
   </head>
   <body>
-    <nav class="barra-de-navegacion">
+    <div id="particles-js"></div>
+    <nav>
       <ul>
+        <li><a class="txtN-inicio" href="../index.html">INICIO</a></li>
+        <li><a class="txt-contactanos" href="../index.html">CONTACTO</a></li>
         <li>
-          <p class="txtN-inicio"><a href="../index.html">INICIO</a></p>
-        </li>
-        <li>
-          <p class="txtN-sol"><a href="../html/sol.html">SOL</a></p>
-        </li>
-        <li>
-          <p class="txtN-mercurio activo">
-            <a href="../html/mercurio.html">MERCURIO</a>
-          </p>
-        </li>
-        <li>
-          <p class="txtN-venus"><a href="../html/venus.html">VENUS</a></p>
-        </li>
-        <li>
-          <p class="txtN-tierra"><a href="../html/tierra.html">TIERRA</a></p>
-        </li>
-        <li>
-          <p class="txtN-marte"><a href="../html/marte.html">MARTE</a></p>
-        </li>
-        <li>
-          <p class="txtN-jupiter"><a href="../html/jupiter.html">JÚPITER</a></p>
-        </li>
-        <li>
-          <p class="txtN-saturno"><a href="../html/saturno.html">SATURNO</a></p>
-        </li>
-        <li>
-          <p class="txtN-urano"><a href="../html/urano.html">URANO</a></p>
-        </li>
-        <li>
-          <p class="txtN-neptuno"><a href="../html/neptuno.html">NEPTUNO</a></p>
-        </li>
-      </ul>
-    </nav>
+          <div class="dropdown">
+            <button>PLANETAS</button>
+            <div class="dropdown-content">
+              <a href="./mercurio.html" id="txtN-mercurio">MERCURIO</a>
+              <a href="./venus.html" id="txtN-venus">VENUS</a>
+              <a href="./marte.html" id="txtN-marte">MARTE</a>
+              <a href="./jupiter.html" id="txtN-jupiter">JUPITER</a>
+              <a href="./saturno.html" id="txtN-saturno">SATURNO</a>
+              <a href="./tierra.html" id="txtN-urano">URANO</a>
+              <a href="./tierra.html" id="txtN-neptuno">NEPTUNO</a>
+            </div>
+          </li>
+        </ul>
+
+      </nav>
     <header>
-      <div id="tierra" class="imagen-planeta"></div>
-      <h1>Mercurio</h1>
+      <div class="planeta mercurio"></div>
+      <div class="  titulo ">
+        <p>Cosmos</p>
+        <h1 id="mercurioh1"> MERCURIO</h1>
+        &mdash; IES JUAN BOSCO &mdash;
+      </div>
     </header>
     <main>
-      <article class="etimologia">
+      <article class="etimologia me-etimologia">
         <h2>ETIMOLOGÍA</h2>
         <p>
           Su nombre viene de la mitologia romana que es el equivalente de
@@ -58,7 +50,7 @@
           terrestres. Un año equivale a 87'87 días terrestres.
         </p>
       </article>
-      <article class="temperatura">
+      <article class="temperatura me-temperatura">
         <h2>TEMPERATURA Y AGUA</h2>
         <p>Temperatura media 453ºC.</p>
         <p>
@@ -66,7 +58,7 @@
         </p>
         <p>En Venus no hay agua por su cercanía al sol.</p>
       </article>
-      <article class="atmosfera">
+      <article class="atmosfera me-atmosfera">
         <h2>DURACIONES Y MOVIMIENTOS</h2>
         <p>Día Venusiano: 243,0226 días terrestres.</p>
         <p>Noche: 116,75 días terrestres.</p>
@@ -74,7 +66,7 @@
         <p>Rotación: gira en dirección contraria a la de la Tierra.</p>
         <p>Translación: 225 días terrestres.</p>
       </article>
-      <article class="curiosidades">
+      <article class="curiosidades me-curiosidades">
         <h2>LA ATMÓSFERA, SUPERFICIE Y GRAVEDAD</h2>
         <p>La superficie de Venus es de 460,2 millones de kilómetros/m2.</p>
         <p>
@@ -98,5 +90,10 @@
         que participa el IES Juan Bosco de Alcázar de San Juan.
       </p>
     </footer>
+    <a href=".txtN-inicio activo" id="cohete"><img
+        src="../images/logo_cohete.png" alt="icono cohete"></a>
+
+    <script src="../JavaScript/particles.min.js"></script>
+    <script src="../JavaScript/particulas.js"></script>
   </body>
 </html>
