@@ -41,7 +41,7 @@ nav ul>li {
   width: 100%;
   justify-content: space-around;
   list-style: none;
-} 
+}
 
 
 /* Estilos del menú desplegable */
@@ -83,17 +83,19 @@ li a {
   font-size: 1.8rem;
 }
 
-  
+
 
 .txtN-inicio {
   animation: colorChange 15s infinite;
 
 }
-.txtN-inicio:hover{
+
+.txtN-inicio:hover {
   border-bottom: 1px solid white;
   transition-duration: 2s;
 }
-.txt-contactanos:hover{
+
+.txt-contactanos:hover {
   border-bottom: 1px solid white;
   transition-duration: 2s;
 }
@@ -319,6 +321,7 @@ header {
     inset -50px -10px 20px rgba(117, 79, 221, 0.7);
   animation: rotacion 20s linear infinite;
 }
+
 .luna {
 
   background-image: url(../images/Luna/Luna.webp);
@@ -379,7 +382,7 @@ main article {
 .me-atmosfera {
   background-color: #a5a5a5;
   box-shadow: 0px 0px 10px #dbdada, 0px 0px 20px #646464, 0px 0px 30px #2e2e2d,
-  0px 0px 40px #181818;
+    0px 0px 40px #181818;
 
 }
 
@@ -394,7 +397,7 @@ main article {
 .me-temperatura {
   background-color: #5b638b;
   box-shadow: 0px 0px 10px #dbdada, 0px 0px 20px #646464, 0px 0px 30px #c03ae6,
-  0px 0px 40px #7842eb;
+    0px 0px 40px #7842eb;
 
 }
 
@@ -410,7 +413,7 @@ main article {
 .v-atmosfera {
   background-color: #dfaa37;
   box-shadow: 0px 0px 10px #f4d391, 0px 0px 20px #f29d72, 0px 0px 30px #f59e2c,
-  0px 0px 40px #ff4800;
+    0px 0px 40px #ff4800;
 
 
 }
@@ -426,7 +429,7 @@ main article {
 .v-temperatura {
   background-color: #e78a43;
   box-shadow: 0px 0px 10px #f4d391, 0px 0px 20px #f29d72, 0px 0px 30px #f59e2c,
-  0px 0px 40px #ff4800;
+    0px 0px 40px #ff4800;
 
 
 }
@@ -443,7 +446,7 @@ main article {
 .t-atmosfera {
   background-color: #4d42cc;
   box-shadow: 0px 0px 10px #a695fa, 0px 0px 20px #7074f2, 0px 0px 30px #5c31dd,
-  0px 0px 40px #3c00ff;
+    0px 0px 40px #3c00ff;
 
 
 }
@@ -459,7 +462,7 @@ main article {
 .t-temperatura {
   background-color: #72ff6a;
   box-shadow: 0px 0px 10px #94ec9d, 0px 0px 20px #6dec75, 0px 0px 30px #18ed3b,
-  0px 0px 40px #00f408;
+    0px 0px 40px #00f408;
 
 
 
@@ -471,23 +474,24 @@ main article {
   transition-duration: 1s;
 
 }
+
 /*-----------------------*/
 .l-etimologia {
   background-color: #a5a5a5;
   box-shadow: 0px 0px 10px #dbdada, 0px 0px 20px #646464, 0px 0px 30px #2e2e2d,
-  0px 0px 40px #181818;
+    0px 0px 40px #181818;
   height: 30rem;
 
 
 }
 
-.l-etimologia:hover{
+.l-etimologia:hover {
   background-color: #6e6d96;
   transition-duration: 1s;
 
 }
 
-.l-curiosidades{
+.l-curiosidades {
   background-color: #5b638b;
   box-shadow: 0px 0px 10px #dbdada, 0px 0px 20px #646464, 0px 0px 30px #2e2e2d,
     0px 0px 40px #181818;
@@ -508,7 +512,7 @@ main article {
 .m-etimologia,
 .m-atmosfera {
   background-color: #cc7742;
-    box-shadow: 0px 0px 10px #ffd700, 0px 0px 20px #ffa500, 0px 0px 30px #ff8c00,
+  box-shadow: 0px 0px 10px #ffd700, 0px 0px 20px #ffa500, 0px 0px 30px #ff8c00,
     0px 0px 40px #ff4500;
 }
 
@@ -524,7 +528,7 @@ main article {
 .m-temperatura {
   background-color: #ffff6a;
 
-    box-shadow: 0px 0px 10px #ffd700, 0px 0px 20px #ffa500, 0px 0px 30px #ff8c00,
+  box-shadow: 0px 0px 10px #ffd700, 0px 0px 20px #ffa500, 0px 0px 30px #ff8c00,
     0px 0px 40px #d4ff00;
 }
 
@@ -542,7 +546,7 @@ main article {
 .j-atmosfera {
   background-color: #df8237;
   box-shadow: 0px 0px 10px #edc06d, 0px 0px 20px #f4b257, 0px 0px 30px #f5bb27,
-  0px 0px 40px #f2ab06;
+    0px 0px 40px #f2ab06;
 
 }
 
@@ -557,7 +561,7 @@ main article {
 .j-temperatura {
   background-color: #F0E68C;
   box-shadow: 0px 0px 10px #edc06d, 0px 0px 20px #f4b257, 0px 0px 30px #f5bb27,
-  0px 0px 40px #f2ab06;
+    0px 0px 40px #f2ab06;
 
 }
 
@@ -573,7 +577,7 @@ main article {
 .s-atmosfera {
   background-color: #cc37df;
   box-shadow: 0px 0px 10px #f7bdf4, 0px 0px 20px #e257f4, 0px 0px 30px #eb27f5,
-  0px 0px 40px #d606f2;
+    0px 0px 40px #d606f2;
 
 }
 
@@ -588,7 +592,7 @@ main article {
 .s-temperatura {
   background-color: #f0d78c;
   box-shadow: 0px 0px 10px #edc06d, 0px 0px 20px #f4b257, 0px 0px 30px #f5bb27,
-  0px 0px 40px #f2ab06;
+    0px 0px 40px #f2ab06;
 
 }
 
@@ -604,7 +608,7 @@ main article {
 .u-atmosfera {
   background-color: #37dadf;
   box-shadow: 0px 0px 10px #6de2ed, 0px 0px 20px #57e2f4, 0px 0px 30px #279ff5,
-  0px 0px 40px #0659f2;
+    0px 0px 40px #0659f2;
 
 }
 
@@ -619,7 +623,7 @@ main article {
 .u-temperatura {
   background-color: #8c9df0;
   box-shadow: 0px 0px 10px #6db8ed, 0px 0px 20px #57bdf4, 0px 0px 30px #27c2f5,
-  0px 0px 40px #0641f2;
+    0px 0px 40px #0641f2;
 
 }
 
@@ -635,7 +639,7 @@ main article {
 .n-atmosfera {
   background-color: #37a7df;
   box-shadow: 0px 0px 10px #6db8ed, 0px 0px 20px #57bdf4, 0px 0px 30px #27c2f5,
-  0px 0px 40px #0641f2;
+    0px 0px 40px #0641f2;
 
 }
 
@@ -650,7 +654,7 @@ main article {
 .n-temperatura {
   background-color: #8f8cf0;
   box-shadow: 0px 0px 10px #6db8ed, 0px 0px 20px #57bdf4, 0px 0px 30px #27c2f5,
-  0px 0px 40px #0641f2;
+    0px 0px 40px #0641f2;
 }
 
 .n-curiosidades:hover,
@@ -667,6 +671,7 @@ main article {
 .temperatura {
   padding: 0.5rem 1rem 1rem 1rem;
 }
+
 #indexh1 {
   background-image: url(../images/Mercurio/fondo-Titulo-Mercurio.webp);
   text-align: center;
@@ -685,12 +690,13 @@ main article {
 #tierrah1 {
   background-image: url(../images/Tierra/fondo-Titulo-Tierra.png);
 }
+
 #lunah1 {
   background-image: url(../images/Luna/fondo-Titulo-Luna.webp);
 
 }
-  
-    
+
+
 
 
 
@@ -804,15 +810,17 @@ footer p {
   }
 
 }
-iframe{
+
+iframe {
   width: 80%;
   height: 70vh;
   margin: 2vw;
   border: 5px solid white;
   box-shadow: 0px 0px 20px #dbdada, 0px 0px 30px #646464, 0px 0px 40px #2e2e2d,
-  0px 0px 50px #181818; 
+    0px 0px 50px #181818;
   padding: 1px;
 }
+
 #particles-js {
   height: 100vh;
   width: 100%;
