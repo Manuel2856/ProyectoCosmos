@@ -250,7 +250,7 @@ header {
 
   background-image: url(../images/Mercurio/Mercurio.webp);
   box-shadow: inset 0 0 20px #5a5a5d,
-  inset -50px -10px 20px rgba(81, 81, 81, 0.7);
+    inset -50px -10px 20px rgba(81, 81, 81, 0.7);
   animation: rotacion 20s linear infinite;
 }
 
@@ -258,14 +258,15 @@ header {
 
   background-image: url(../images/Venus/Venus.webp);
   box-shadow: inset 0 0 20px #ddaf26,
-  inset -50px -10px 20px rgba(238, 142, 16, 0.844);
+    inset -50px -10px 20px rgba(238, 142, 16, 0.844);
   animation: rotacion 20s linear infinite;
 }
+
 .tierra {
 
   background-image: url(../images/Tierra/mapa-tierra.webp);
   box-shadow: inset 0 0 20px #dde6fd,
-  inset -50px -10px 20px rgba(255, 255, 255, 0.7);
+    inset -50px -10px 20px rgba(255, 255, 255, 0.7);
   animation: rotacion 20s linear infinite;
 }
 
@@ -274,14 +275,14 @@ header {
   animation: rotacion 40s linear infinite;
 
   box-shadow: inset 0 0 20px #391010,
-  inset -50px -10px 20px rgba(82, 8, 8, 0.7);
+    inset -50px -10px 20px rgba(82, 8, 8, 0.7);
 }
 
 .jupiter {
 
   background-image: url(../images/Jupiter/Jupiter.webp);
   box-shadow: inset 0 0 20px #77541c,
-  inset -50px -10px 20px rgba(81, 48, 6, 0.7);
+    inset -50px -10px 20px rgba(81, 48, 6, 0.7);
   animation: rotacion 20s linear infinite;
 }
 
@@ -289,14 +290,14 @@ header {
 
   background-image: url(../images/Saturno/Saturno.webp);
   box-shadow: inset 0 0 20px #8723ac,
-  inset -50px -10px 20px rgba(42, 6, 76, 0.7);
+    inset -50px -10px 20px rgba(42, 6, 76, 0.7);
   animation: rotacion 20s linear infinite;
 }
 
-.urano{
+.urano {
   background-image: url(../images/Urano/Urano.webp);
   box-shadow: inset 0 0 20px #a3b8ec,
-  inset -50px -10px 20px rgba(121, 219, 228, 0.7);
+    inset -50px -10px 20px rgba(121, 219, 228, 0.7);
   animation: rotacion 20s linear infinite;
 }
 
@@ -304,7 +305,7 @@ header {
 
   background-image: url(../images/Neptuno/Neptuno.webp);
   box-shadow: inset 0 0 20px #8dadff,
-  inset -50px -10px 20px rgba(117, 79, 221, 0.7);
+    inset -50px -10px 20px rgba(117, 79, 221, 0.7);
   animation: rotacion 20s linear infinite;
 }
 
@@ -354,6 +355,62 @@ main article {
   border: 5px solid #ffffff;
 }
 
+
+/*-------------------------*/
+.me-etimologia,
+.me-atmosfera {
+  background-color: #a5a5a5;
+
+}
+
+.me-etimologia:hover,
+.me-atmosfera:hover {
+  background-color: #6e6d96;
+  transition-duration: 1s;
+
+}
+
+.me-curiosidades,
+.me-temperatura {
+  background-color: #5b638b;
+
+}
+
+.me-curiosidades:hover,
+.me-temperatura:hover {
+  background-color: #4c427b;
+  transition-duration: 1s;
+
+}
+
+/*-------------------------*/
+.v-etimologia,
+.v-atmosfera {
+  background-color: #dfaa37;
+
+}
+
+.v-etimologia:hover,
+.v-atmosfera:hover {
+  background-color: #d2841e;
+  transition-duration: 1s;
+
+}
+
+.v-curiosidades,
+.v-temperatura {
+  background-color: #e78a43;
+
+}
+
+.v-curiosidades:hover,
+.v-temperatura:hover {
+  background-color: #d11c08;
+  transition-duration: 1s;
+
+}
+
+/*-----------------------------------*/
 .t-etimologia,
 .t-atmosfera {
   background-color: #4d42cc;
@@ -384,8 +441,10 @@ main article {
 .m-etimologia,
 .m-atmosfera {
   background-color: #cc7742;
-
+    box-shadow: 0px 0px 10px #ffd700, 0px 0px 20px #ffa500, 0px 0px 30px #ff8c00,
+    0px 0px 40px #ff4500;
 }
+
 
 .m-etimologia:hover,
 .m-atmosfera:hover {
@@ -398,7 +457,11 @@ main article {
 .m-temperatura {
   background-color: #ffff6a;
 
+    box-shadow: 0px 0px 10px #ffd700, 0px 0px 20px #ffa500, 0px 0px 30px #ff8c00,
+    0px 0px 40px #d4ff00;
 }
+
+
 
 .m-curiosidades:hover,
 .m-temperatura:hover {
@@ -406,6 +469,7 @@ main article {
   transition-duration: 1s;
 
 }
+
 /*------------------------*/
 .j-etimologia,
 .j-atmosfera {
@@ -432,6 +496,7 @@ main article {
   transition-duration: 1s;
 
 }
+
 /*---------------------------------*/
 .s-etimologia,
 .s-atmosfera {
@@ -458,6 +523,7 @@ main article {
   transition-duration: 1s;
 
 }
+
 /*-------------------------*/
 .u-etimologia,
 .u-atmosfera {
@@ -484,29 +550,30 @@ main article {
   transition-duration: 1s;
 
 }
+
 /*-------------------------*/
-.u-etimologia,
+.n-etimologia,
 .u-atmosfera {
-  background-color: #37dadf;
+  background-color: #37a7df;
 
 }
 
-.u-etimologia:hover,
-.u-atmosfera:hover {
-  background-color: #1e6fd2;
+.n-etimologia:hover,
+.n-atmosfera:hover {
+  background-color: #1e2dd2;
   transition-duration: 1s;
 
 }
 
-.u-curiosidades,
-.u-temperatura {
-  background-color: #8c9df0;
+.n-curiosidades,
+.n-temperatura {
+  background-color: #8f8cf0;
 
 }
 
-.u-curiosidades:hover,
-.u-temperatura:hover {
-  background-color: #2608ab;
+.n-curiosidades:hover,
+.n-temperatura:hover {
+  background-color: #180474;
   transition-duration: 1s;
 
 }
@@ -518,27 +585,35 @@ main article {
 .temperatura {
   padding: 0.5rem 1rem 1rem 1rem;
 }
+
 #mercurioh1 {
   background-image: url(../images/Mercurio/fondo-Titulo-Mercurio.webp);
 }
+
 #venush1 {
   background-image: url(../images/Venus/fondo-Titulo-Venus.webp);
 }
+
 #tierrah1 {
   background-image: url(../images/Tierra/fondo-Titulo-Tierra.png);
 }
+
 #marteh1 {
   background-image: url(../images/Marte/fondo-Titulo-Marte.webp);
 }
+
 #jupiterh1 {
   background-image: url(../images/Jupiter/fondo-Titulo-Jupiter.webp);
 }
+
 #saturnoh1 {
   background-image: url(../images/Saturno/fondo-Titulo-Saturno.webp);
 }
+
 #uranoh1 {
   background-image: url(../images/Urano/fondo-Titulo-Urano.webp);
 }
+
 #neptunoh1 {
   background-image: url(../images/Neptuno/fondo-Titulo-Neptuno.webp);
 }
