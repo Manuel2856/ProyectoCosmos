@@ -58,6 +58,8 @@ div ul {
 .dropdown-content {
   display: none;
   position: absolute;
+  background-color: rgba(60, 60, 60, 0.342);
+  opacity: 0.8;
   border: 0px 1px 1px 1px solid white;
   overflow: auto;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
@@ -71,6 +73,7 @@ div ul {
 .dropdown-content a {
   display: block;
   padding: 5px;
+  font-size: 1.2rem;
   text-shadow: 1px 1px 1px black;
   text-decoration: none;
 }
@@ -830,7 +833,10 @@ footer p {
   h1 {
     font-size: 3.5rem;
   }
-
+  .imagen-planeta {
+    max-width: 10rem;
+    max-height: 10rem;
+  }
 
   main {
     grid-template-columns: repeat(1, 2fr);
