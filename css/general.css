@@ -391,7 +391,7 @@ main article {
 .me-etimologia,
 .me-atmosfera {
   background-color: #a5a5a5;
-  box-shadow: 0px 0px 10px #dbdada, 0px 0px 20px #646464, 0px 0px 30px #2e2e2d,
+  box-shadow: 0px 0px 10px #dbdada, 0px 0px 20px #646464, 0px 0px 30px #4d4d4b,
     0px 0px 40px #181818;
 
 }
@@ -423,7 +423,7 @@ main article {
 .v-atmosfera {
   background-color: #dfaa37;
   box-shadow: 0px 0px 10px #f4d391, 0px 0px 20px #f29d72, 0px 0px 30px #f59e2c,
-    0px 0px 40px #ff4800;
+    0px 0px 40px #f2a900;
 
 
 }
@@ -446,7 +446,7 @@ main article {
 
 .v-curiosidades:hover,
 .v-temperatura:hover {
-  background-color: #d11c08;
+  background-color: #ec5306;
   transition-duration: 1s;
 
 }
@@ -828,7 +828,7 @@ footer p {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 
 
@@ -844,7 +844,7 @@ footer p {
 
 iframe {
   width: 80%;
-  height: 70vh;
+  height: 90vh;
   margin: 2vw;
   border: 5px solid white;
   box-shadow: 0px 0px 20px #dbdada, 0px 0px 30px #646464, 0px 0px 40px #2e2e2d,
